@@ -1,0 +1,11 @@
+{
+	"name": "node-red_le_bon_module",
+	"version": "1.0.0",
+	"description": "",
+	"node-red": {
+		"nodes": {
+			"le_bon_message": "nodes/le_bon_message.js",
+			"le_random_number": "nodes/le_random_number.js"
+		}
+	}
+}

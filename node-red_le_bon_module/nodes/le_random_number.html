@@ -1,0 +1,25 @@
+<script type="text/javascript">
+    RED.nodes.registerType('le_random_number',{
+        category: 'random',
+        color: '#a6bbcf',
+        defaults: {
+            name: {value:"Random Number"},
+            tab: {type: 'random', required: true}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "file.svg",
+        label: function() { return this.name || 'le_random_number'; }
+    });
+</script>
+
+<script type="text/html" data-template-name="le_random_number">
+    <div class="form-row">
+        <label for="node-input-Nname"><i class="fa fa-tag"></i> input ?</label>
+        <input type="text" id="node-input-Nname" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="le_random_number">
+    <p>Node module description text</p>
+</script>
