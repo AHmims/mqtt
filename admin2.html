@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="admin2.js"></script>
+    <script src="public/js/mqtt.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h2>Add flow of spam</h2>
+        <input type="button" value="Initiate" id="start"/>
+        <select id="req_flows">
+        </select>
+        <input type="button" value="Terminate" id="stop"/>
+        <hr>
+        <div id="output">
+
+        </div>
+    </div>
+    <script>
+        var client = mqtt.connect("ws://127.0.0.1:9001") // you add a ws:// url here
+        client.subscribe("hmm/test3")
+
+        client.on("message", function (topic, payload) {
+            const data = [topic, payload].join(": ");
+            console.log(JSON.parse(payload.toString()));
+            // 
+            document.getElementById('output').innerHTML += `<p>${data}</p>`;
+            // client.end()
+        })
+    </script>
+
+</body>
+</html>
