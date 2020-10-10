@@ -14,7 +14,7 @@
             topic : "hmm/test2"
         },{
             host : "35.193.24.19",
-            topic : "dev/ch1"
+            topic : "#"
         }]
         var client = mqtt.connect(`ws://${config[1].host}:9001`) // you add a ws:// url here
         client.subscribe(config[1].topic)

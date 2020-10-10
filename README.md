@@ -67,3 +67,13 @@ iptables
 results => port is opened but still not accecibl remotly. | this will work if the machine was not runing on a cloud service such as gcloud/aws
 
 solution => https://stackoverflow.com/a/62814273 thanks stranger 😙
+
+------------------------
+# Setting up phpmyadmin
+## LAMP STACK
+
+https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-ubuntu-18-04
+
+## phpmyadmin
+
+https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-phpmyadmin-on-ubuntu-18-04
