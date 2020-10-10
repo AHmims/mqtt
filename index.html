@@ -9,8 +9,15 @@
 <body>
     <ul id="container"></ul>
     <script>
-        var client = mqtt.connect("ws://127.0.0.1:9001") // you add a ws:// url here
-        client.subscribe("hmm/test2")
+        const config = [{
+            host : "127.0.0.1",
+            topic : "hmm/test2"
+        },{
+            host : "35.193.24.19",
+            topic : "dev/ch1"
+        }]
+        var client = mqtt.connect(`ws://${config[1].host}:9001`) // you add a ws:// url here
+        client.subscribe(config[1].topic)
 
         client.on("message", function (topic, payload) {
             const data = [topic, payload].join(": ");

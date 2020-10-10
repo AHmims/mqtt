@@ -13,7 +13,14 @@ C:\Program Files\mosquitto> .\mosquitto -v -c ./mosquitto.conf
 
 ## check for open ports
 
+(WINDOWS)
 netstat
+(LINUX)
+sudo lsof -i -P -n | grep LISTEN
+
+## Enable firewall / configure ports
+
+https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-with-ufw-on-ubuntu-18-04
 
 ---
 
@@ -45,3 +52,18 @@ sudo apt-get update
 sudo apt-get install mosquitto
 sudo apt-get install mosquitto-clients
 sudo apt clean
+
+---
+
+# A problem that took 3 hours to solve
+
+websocket not accecible remotly, what to do ? Enable it.
+
+what I did =>
+
+ufc
+iptables
+
+results => port is opened but still not accecibl remotly. | this will work if the machine was not runing on a cloud service such as gcloud/aws
+
+solution => https://stackoverflow.com/a/62814273 thanks stranger 😙
