@@ -74,6 +74,23 @@ solution => https://stackoverflow.com/a/62814273 thanks stranger 😙
 
 https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-ubuntu-18-04
 
+when mysql is installed and want to access it do this => mysql -p
+
 ## phpmyadmin
 
 https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-phpmyadmin-on-ubuntu-18-04
+
+----------------------
+
+## run node-red / mosquitto on startup
+### node-red
+
+https://nodered.org/docs/faq/starting-node-red-on-boot
+
+### mosquitto broker
+
+Create a config file and place it in /etc/mosquitto/conf.d/mosquitto.conf
+start service => sudo systemctl start mosquitto
+start service on startup => sudo systemctl enable mosquitto
+
+reference : https://askubuntu.com/a/890887
