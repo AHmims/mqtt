@@ -160,3 +160,7 @@ $(document).ready(() => {
 function randomId(source) {
   return source + Math.floor(Math.random() * 10000000);
 }
+[{ data: { bc: "", oxy: "", temp: "" }, date: "" }];
+// [{ data: { bc: '60', oxy: '20', temp: '35.5' }, date: '2020-12-12 04:23' }]
+// "{'records':[{'data':{'bc':'60','oxy':'20','temp':'35.5'},'date':'2020-12-12 04:23'}],'mac':'6E-0E-95-27-13-3'}"
+// "{'records':[{'data':{'bc':'','oxy':'','temp':''},'date':''}],'mac':''}"
