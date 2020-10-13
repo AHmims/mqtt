@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Oct 12, 2020 at 12:33 AM
+-- Generation Time: Oct 13, 2020 at 07:11 PM
 -- Server version: 5.7.31-0ubuntu0.16.04.1
 -- PHP Version: 7.0.33-0ubuntu0.16.04.15
 
@@ -144,7 +144,7 @@ CREATE TABLE `personnel` (
 --
 
 INSERT INTO `personnel` VALUES(1, 'FF953785', 'EL MERNISSI', 'Anouar', 663865410, '1982-02-04', 'dep_1', '66-68-7C-6B-58-8F', 1000, 0);
-INSERT INTO `personnel` VALUES(2, 'FK7433', 'AATIF', 'Brahim', 664780922, '1976-10-10', 'dep_1', '6E-0E-95-27-13-3E', 1000, 0);
+INSERT INTO `personnel` VALUES(2, 'FK7433', 'AATIF', 'Brahim', 664780922, '1976-10-10', 'dep_1', '6E-0E-95-27-13-3E', 1000, 1);
 INSERT INTO `personnel` VALUES(3, 'H426165', 'MAROUANE', 'Abdelmotalib', 653325549, '1982-11-06', 'dep_1', '17-DE-36-70-58-A9', 1000, 0);
 
 -- --------------------------------------------------------
@@ -291,12 +291,12 @@ ALTER TABLE `convergence`
 -- AUTO_INCREMENT for table `historique`
 --
 ALTER TABLE `historique`
-  MODIFY `idHistorique` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `idHistorique` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 --
 -- AUTO_INCREMENT for table `notification`
 --
 ALTER TABLE `notification`
-  MODIFY `idNotification` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `idNotification` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `personnel`
 --
@@ -306,7 +306,7 @@ ALTER TABLE `personnel`
 -- AUTO_INCREMENT for table `record`
 --
 ALTER TABLE `record`
-  MODIFY `idRecord` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `idRecord` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 --
 -- AUTO_INCREMENT for table `recordPoints`
 --
