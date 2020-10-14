@@ -170,3 +170,4 @@ function randomId(source) {
 // 
 // 
 // ERROR FORMAT =>{"code":"br_na_brace","user":"6E-0E-95-27-13-3","date":"2020-10-13 17:14:05","broker":"10"}
+// SELECT DISTINCT SUM(`compteurZoneLog`) AS timeSpent FROM `zoneLog` WHERE TIMESTAMPDIFF(MINUTE, dateZoneLog, now()) <= 15 AND idPersonnel IN (SELECT idPersonnel FROM personnel WHERE macBracelet = '6E-0E-95-27-13-3E') AND idBroker IN (SELECT idbroker FROM broker WHERE idZone = 3) ORDER BY dateZoneLog DESC
