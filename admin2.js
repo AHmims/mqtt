@@ -171,3 +171,6 @@ function randomId(source) {
 // 
 // ERROR FORMAT =>{"code":"br_na_brace","user":"6E-0E-95-27-13-3","date":"2020-10-13 17:14:05","broker":"10"}
 // SELECT DISTINCT SUM(`compteurZoneLog`) AS timeSpent FROM `zoneLog` WHERE TIMESTAMPDIFF(MINUTE, dateZoneLog, now()) <= 15 AND idPersonnel IN (SELECT idPersonnel FROM personnel WHERE macBracelet = '6E-0E-95-27-13-3E') AND idBroker IN (SELECT idbroker FROM broker WHERE idZone = 3) ORDER BY dateZoneLog DESC
+// 
+// convergance data format => "{'broker' : '', 'data' : [{'distance' : '', 'date' : '', 'bracelet_1' : '', 'bracelet_2' : ''}]}"
+"{'broker' : '0B-88-A4-66-0E-A0', 'data' : [{'distance' : 10, 'date' : '2020-10-10 10:10:10', 'bracelet_1' : '66-68-7C-6B-58-8F', 'bracelet_2' : '6E-0E-95-27-13-3E'}, {'distance' : 10, 'date' : '2020-10-10 10:10:14', 'bracelet_1' : '6E-0E-95-27-13-3E', 'bracelet_2' : '66-68-7C-6B-58-8F'}, {'distance' : 10, 'date' : '2020-10-10 10:10:10', 'bracelet_1' : '66-68-7C-6B-58-8F', 'bracelet_2' : '17-DE-36-70-58-A9'}]}"
