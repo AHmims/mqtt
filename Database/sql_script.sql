@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Oct 13, 2020 at 07:11 PM
+-- Generation Time: Oct 17, 2020 at 01:01 PM
 -- Server version: 5.7.31-0ubuntu0.16.04.1
--- PHP Version: 7.0.33-0ubuntu0.16.04.15
+-- PHP Version: 7.0.33-0ubuntu0.16.04.16
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -48,6 +48,29 @@ INSERT INTO `accesZone` VALUES(3, 4);
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `accesZoneTemp`
+--
+
+DROP TABLE IF EXISTS `accesZoneTemp`;
+CREATE TABLE `accesZoneTemp` (
+  `idAccesZT` int(11) NOT NULL,
+  `raisonAccesZT` text COLLATE utf8_unicode_ci NOT NULL,
+  `dateD_AccesZT` datetime NOT NULL,
+  `dateF_AccesZT` datetime NOT NULL,
+  `idPersonnel` int(11) NOT NULL,
+  `idZone` int(11) NOT NULL,
+  `idUtilisateur` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `accesZoneTemp`
+--
+
+INSERT INTO `accesZoneTemp` VALUES(1, 'raison', '2020-10-13 20:00:00', '2020-10-13 22:00:00', 2, 3, 1);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `broker`
 --
 
@@ -64,7 +87,9 @@ CREATE TABLE `broker` (
 --
 
 INSERT INTO `broker` VALUES(1, '95-43-C8-3B-C0-0A', 'pointage', 1);
-INSERT INTO `broker` VALUES(2, '8C-5D-24-D4-A8-BF', 'pointage', 1);
+INSERT INTO `broker` VALUES(2, '8C-5D-24-D4-A8-BF', 'zone', 3);
+INSERT INTO `broker` VALUES(3, 'FE-36-54-95-BD-74', 'zone', 2);
+INSERT INTO `broker` VALUES(5, '0B-88-A4-66-0E-A0', 'zone', 3);
 
 -- --------------------------------------------------------
 
@@ -78,8 +103,16 @@ CREATE TABLE `convergence` (
   `dateConvergence` datetime NOT NULL,
   `distanceConvergence` float NOT NULL,
   `idBroker` int(11) DEFAULT NULL,
-  `idPersonnel` int(11) DEFAULT NULL
+  `idPersonnel` int(11) DEFAULT NULL,
+  `idPersonnel_2` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `convergence`
+--
+
+INSERT INTO `convergence` VALUES(26, '2020-10-10 10:10:10', 1.2, 5, 1, 2);
+INSERT INTO `convergence` VALUES(27, '2020-10-10 10:10:10', 0.5, 5, 1, 3);
 
 -- --------------------------------------------------------
 
@@ -118,6 +151,14 @@ CREATE TABLE `notification` (
   `idBroker` int(11) DEFAULT NULL,
   `idPersonnel` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `notification`
+--
+
+INSERT INTO `notification` VALUES(4, 'br_na_brace', '2020-10-13 21:32:47', 1, NULL);
+INSERT INTO `notification` VALUES(5, 'br_na_z', '2020-10-15 00:30:16', 1, 3);
+INSERT INTO `notification` VALUES(6, 'br_na_z', '2020-10-15 00:31:51', 1, 3);
 
 -- --------------------------------------------------------
 
@@ -180,6 +221,36 @@ CREATE TABLE `recordPoints` (
   `idPersonnel` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+--
+-- Dumping data for table `recordPoints`
+--
+
+INSERT INTO `recordPoints` VALUES(43, 'Ne pas maintenir la distance sociale', '2020-10-15 15:10:38', -5, 5, 1);
+INSERT INTO `recordPoints` VALUES(44, 'Ne pas maintenir la distance sociale', '2020-10-15 15:10:38', -5, 5, 2);
+INSERT INTO `recordPoints` VALUES(46, 'Ne pas maintenir la distance sociale', '2020-10-15 15:10:38', -15, 5, 1);
+INSERT INTO `recordPoints` VALUES(47, 'Ne pas maintenir la distance sociale', '2020-10-15 15:10:38', -15, 5, 3);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `utilisateur`
+--
+
+DROP TABLE IF EXISTS `utilisateur`;
+CREATE TABLE `utilisateur` (
+  `idUtilisateur` int(11) NOT NULL,
+  `emailUtilisateur` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `roleUtilisateur` varchar(40) COLLATE utf8_unicode_ci NOT NULL,
+  `passUtilisateur` varchar(250) COLLATE utf8_unicode_ci NOT NULL,
+  `idPersonnel` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `utilisateur`
+--
+
+INSERT INTO `utilisateur` VALUES(1, 'test@gmail.com', 'admin', 'azerty', 3);
+
 -- --------------------------------------------------------
 
 --
@@ -201,6 +272,30 @@ INSERT INTO `zone` VALUES(2, 'zone_2');
 INSERT INTO `zone` VALUES(3, 'zone_3');
 INSERT INTO `zone` VALUES(4, 'zone_4');
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `zoneLog`
+--
+
+DROP TABLE IF EXISTS `zoneLog`;
+CREATE TABLE `zoneLog` (
+  `idZoneLog` int(11) NOT NULL,
+  `dateZoneLog` datetime NOT NULL,
+  `compteurZoneLog` int(11) NOT NULL,
+  `idPersonnel` int(11) NOT NULL,
+  `idBroker` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `zoneLog`
+--
+
+INSERT INTO `zoneLog` VALUES(40, '2020-10-15 00:01:18', 0, 3, 5);
+INSERT INTO `zoneLog` VALUES(41, '2020-10-15 00:02:09', 595, 3, 5);
+INSERT INTO `zoneLog` VALUES(42, '2020-10-15 00:28:51', 600, 3, 5);
+INSERT INTO `zoneLog` VALUES(43, '2020-10-15 00:31:41', 4, 3, 5);
+
 --
 -- Indexes for dumped tables
 --
@@ -211,6 +306,15 @@ INSERT INTO `zone` VALUES(4, 'zone_4');
 ALTER TABLE `accesZone`
   ADD KEY `fk_accesZone_zone` (`idZone`),
   ADD KEY `fk_accesZone_personnel` (`idPersonnel`);
+
+--
+-- Indexes for table `accesZoneTemp`
+--
+ALTER TABLE `accesZoneTemp`
+  ADD PRIMARY KEY (`idAccesZT`),
+  ADD KEY `fk_accesZoneTemp_personnel` (`idPersonnel`),
+  ADD KEY `fk_accesZoneTemp_zone` (`idZone`),
+  ADD KEY `fk_accesZoneTemp_utilisateur` (`idUtilisateur`);
 
 --
 -- Indexes for table `broker`
@@ -226,7 +330,8 @@ ALTER TABLE `broker`
 ALTER TABLE `convergence`
   ADD PRIMARY KEY (`idConvergence`),
   ADD KEY `fk_convergence_broker` (`idBroker`),
-  ADD KEY `fk_convergence_personnel` (`idPersonnel`);
+  ADD KEY `fk_convergence_personnel` (`idPersonnel`),
+  ADD KEY `fk_convergence_idPersonnel2` (`idPersonnel_2`);
 
 --
 -- Indexes for table `historique`
@@ -268,25 +373,45 @@ ALTER TABLE `recordPoints`
   ADD KEY `fk_recordPoints_personnel` (`idPersonnel`);
 
 --
+-- Indexes for table `utilisateur`
+--
+ALTER TABLE `utilisateur`
+  ADD PRIMARY KEY (`idUtilisateur`),
+  ADD KEY `fk_utilisateur_personnel` (`idPersonnel`);
+
+--
 -- Indexes for table `zone`
 --
 ALTER TABLE `zone`
   ADD PRIMARY KEY (`idZone`);
 
 --
+-- Indexes for table `zoneLog`
+--
+ALTER TABLE `zoneLog`
+  ADD PRIMARY KEY (`idZoneLog`),
+  ADD KEY `fk_zoneLog_personnel` (`idPersonnel`),
+  ADD KEY `fk_zoneLog_broker` (`idBroker`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
 --
+-- AUTO_INCREMENT for table `accesZoneTemp`
+--
+ALTER TABLE `accesZoneTemp`
+  MODIFY `idAccesZT` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
 -- AUTO_INCREMENT for table `broker`
 --
 ALTER TABLE `broker`
-  MODIFY `idBroker` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `idBroker` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT for table `convergence`
 --
 ALTER TABLE `convergence`
-  MODIFY `idConvergence` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `idConvergence` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 --
 -- AUTO_INCREMENT for table `historique`
 --
@@ -296,7 +421,7 @@ ALTER TABLE `historique`
 -- AUTO_INCREMENT for table `notification`
 --
 ALTER TABLE `notification`
-  MODIFY `idNotification` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `idNotification` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 --
 -- AUTO_INCREMENT for table `personnel`
 --
@@ -311,12 +436,22 @@ ALTER TABLE `record`
 -- AUTO_INCREMENT for table `recordPoints`
 --
 ALTER TABLE `recordPoints`
-  MODIFY `idRecordPoints` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `idRecordPoints` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
+--
+-- AUTO_INCREMENT for table `utilisateur`
+--
+ALTER TABLE `utilisateur`
+  MODIFY `idUtilisateur` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `zone`
 --
 ALTER TABLE `zone`
   MODIFY `idZone` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+--
+-- AUTO_INCREMENT for table `zoneLog`
+--
+ALTER TABLE `zoneLog`
+  MODIFY `idZoneLog` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
 --
 -- Constraints for dumped tables
 --
@@ -329,6 +464,14 @@ ALTER TABLE `accesZone`
   ADD CONSTRAINT `fk_accesZone_zone` FOREIGN KEY (`idZone`) REFERENCES `zone` (`idZone`);
 
 --
+-- Constraints for table `accesZoneTemp`
+--
+ALTER TABLE `accesZoneTemp`
+  ADD CONSTRAINT `fk_accesZoneTemp_personnel` FOREIGN KEY (`idPersonnel`) REFERENCES `personnel` (`idPersonnel`),
+  ADD CONSTRAINT `fk_accesZoneTemp_utilisateur` FOREIGN KEY (`idUtilisateur`) REFERENCES `utilisateur` (`idUtilisateur`),
+  ADD CONSTRAINT `fk_accesZoneTemp_zone` FOREIGN KEY (`idZone`) REFERENCES `zone` (`idZone`);
+
+--
 -- Constraints for table `broker`
 --
 ALTER TABLE `broker`
@@ -339,6 +482,7 @@ ALTER TABLE `broker`
 --
 ALTER TABLE `convergence`
   ADD CONSTRAINT `fk_convergence_broker` FOREIGN KEY (`idBroker`) REFERENCES `broker` (`idBroker`),
+  ADD CONSTRAINT `fk_convergence_idPersonnel2` FOREIGN KEY (`idPersonnel_2`) REFERENCES `personnel` (`idPersonnel`),
   ADD CONSTRAINT `fk_convergence_personnel` FOREIGN KEY (`idPersonnel`) REFERENCES `personnel` (`idPersonnel`);
 
 --
@@ -367,6 +511,19 @@ ALTER TABLE `record`
 ALTER TABLE `recordPoints`
   ADD CONSTRAINT `fk_recordPoints_broker` FOREIGN KEY (`idBroker`) REFERENCES `broker` (`idBroker`),
   ADD CONSTRAINT `fk_recordPoints_personnel` FOREIGN KEY (`idPersonnel`) REFERENCES `personnel` (`idPersonnel`);
+
+--
+-- Constraints for table `utilisateur`
+--
+ALTER TABLE `utilisateur`
+  ADD CONSTRAINT `fk_utilisateur_personnel` FOREIGN KEY (`idPersonnel`) REFERENCES `personnel` (`idPersonnel`);
+
+--
+-- Constraints for table `zoneLog`
+--
+ALTER TABLE `zoneLog`
+  ADD CONSTRAINT `fk_zoneLog_broker` FOREIGN KEY (`idBroker`) REFERENCES `broker` (`idBroker`),
+  ADD CONSTRAINT `fk_zoneLog_personnel` FOREIGN KEY (`idPersonnel`) REFERENCES `personnel` (`idPersonnel`);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
