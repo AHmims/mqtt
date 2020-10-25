@@ -1,0 +1,5410 @@
+[
+    {
+        "id": "b87ff581.195058",
+        "type": "tab",
+        "label": "broker_auth",
+        "disabled": false,
+        "info": "Flow pour l'authentification des bracelets"
+    },
+    {
+        "id": "6d9ee958.5bf188",
+        "type": "tab",
+        "label": "broker_getRecords",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "28dc4249.5b735e",
+        "type": "tab",
+        "label": "broker_zone",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "d035534c.e2f29",
+        "type": "tab",
+        "label": "brokers",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "d0b40323.697ca",
+        "type": "tab",
+        "label": "broker_fileD’attente",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "6bda374.6c46bc8",
+        "type": "group",
+        "z": "6d9ee958.5bf188",
+        "name": "verify mac adress",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "cc0bf5e.8abf308",
+            "c2bcbf75.b641",
+            "e836b84c.ad8818",
+            "9697f578.a53678",
+            "15b464d7.1478bb",
+            "5532a3ac.cdb47c"
+        ],
+        "x": 794,
+        "y": 179
+    },
+    {
+        "id": "cd9b151b.0218f8",
+        "type": "group",
+        "z": "6d9ee958.5bf188",
+        "name": "error managment",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "1aebe5ea.69008a",
+            "8172d8ac.8314e8",
+            "84663440.7a22e8",
+            "f3a3e1ed.7a7bc",
+            "5f0a5a52.405e54",
+            "ca8422cc.911a4",
+            "35abd741.161e78",
+            "5a555f4b.9b555",
+            "3e4ddca4.2878a4"
+        ],
+        "x": 2694,
+        "y": 199
+    },
+    {
+        "id": "942f7098.7054e",
+        "type": "group",
+        "z": "b87ff581.195058",
+        "name": "error managment",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "395eefb2.e57a3",
+            "4d1b74ef.57f57c",
+            "b09be085.ab77d",
+            "915ff6da.2cd8b8",
+            "948a4b6b.081198",
+            "41fd3889.0f12a8",
+            "dcf0a613.328e08",
+            "ef6e76e4.d7df18",
+            "78b2de96.df7c4"
+        ],
+        "x": 1994,
+        "y": 179,
+        "w": 1052,
+        "h": 182
+    },
+    {
+        "id": "aadac8bf.c39db8",
+        "type": "group",
+        "z": "28dc4249.5b735e",
+        "name": "error managment",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "2916b92c.0e91e6",
+            "26ebd14b.28d68e",
+            "ae0a4544.404b58",
+            "5f3707b0.4e78e8",
+            "8f51befd.49b77",
+            "5514250b.90d46c",
+            "b20832d0.e97ff",
+            "c3a28c49.ba2dd",
+            "12f664c7.a6cf0b"
+        ],
+        "x": 1574,
+        "y": 299
+    },
+    {
+        "id": "49482583.75675c",
+        "type": "group",
+        "z": "d035534c.e2f29",
+        "name": "error managment",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "b44fc4a6.814338",
+            "1aafdbd0.35d8a4",
+            "10ff960.de5286a",
+            "b7dfb559.475478",
+            "b5ba1a07.1e6068",
+            "1e86ea3a.a80206",
+            "99c15866.623a28",
+            "6dc9504.2fed1b",
+            "53b33f.9c0fecc"
+        ],
+        "x": 2554,
+        "y": 259
+    },
+    {
+        "id": "7c735853.01f5a8",
+        "type": "group",
+        "z": "d0b40323.697ca",
+        "name": "Test if thebracelet already have an ongoing ticket",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "c1fb502c.80496",
+            "76f2ee36.1baab",
+            "7c372248.372f4c",
+            "c7198ca0.9b4cc"
+        ],
+        "x": 774,
+        "y": 139,
+        "w": 672,
+        "h": 82
+    },
+    {
+        "id": "ab84930f.cce9b",
+        "type": "group",
+        "z": "d0b40323.697ca",
+        "name": "create a ticket for the bracelet",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "3bc000a0.9c089",
+            "1c25935b.c328bd",
+            "1c9d5c46.b82fb4",
+            "b2cc5f22.d5bdb"
+        ],
+        "x": 1454,
+        "y": 99,
+        "w": 692,
+        "h": 82
+    },
+    {
+        "id": "4eda1060.c17ad",
+        "type": "group",
+        "z": "d0b40323.697ca",
+        "name": "queue line",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "af3e7ab1.ce8c58",
+            "9fa10844.2c42a8",
+            "b26bc42b.ba6068",
+            "cbfe425a.d361"
+        ],
+        "x": 2154,
+        "y": 99,
+        "w": 692,
+        "h": 82
+    },
+    {
+        "id": "29a73220.da765e",
+        "type": "group",
+        "z": "d0b40323.697ca",
+        "name": "Set globals",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "6b8d7dc2.133ef4",
+            "e53cf402.91e608",
+            "c2ddfcc1.9162b"
+        ],
+        "x": 74,
+        "y": 19,
+        "w": 672,
+        "h": 82
+    },
+    {
+        "id": "63d3a26e.9c57cc",
+        "type": "group",
+        "z": "d0b40323.697ca",
+        "name": "send response back",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "70f68dec.179cb4",
+            "93c637f.32b50c8",
+            "63ca509c.76951"
+        ],
+        "x": 2854,
+        "y": 99,
+        "w": 492,
+        "h": 82
+    },
+    {
+        "id": "d9a87a1b.576e38",
+        "type": "group",
+        "z": "d0b40323.697ca",
+        "name": "error managment",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "ed8f3a75.4af088",
+            "37c15808.944328",
+            "24a90ffe.a9583",
+            "5db8ac9e.442d04",
+            "895f07e1.13d128",
+            "cf214037.bde0f",
+            "d798a323.f5f75",
+            "4f9e62ae.ff7d3c",
+            "cd972cab.55ab3"
+        ],
+        "x": 2574,
+        "y": 499,
+        "w": 1052,
+        "h": 182
+    },
+    {
+        "id": "e80cfc64.ed868",
+        "type": "group",
+        "z": "b87ff581.195058",
+        "name": "if auth gen welcome msg => {msg : '', points : ''}",
+        "style": {
+            "label": true,
+            "label-position": "sw"
+        },
+        "nodes": [
+            "5f3ade4.2ffbb2",
+            "68c72eda.dd7db",
+            "4401b002.10d9e",
+            "ce168c33.6aee6"
+        ],
+        "x": 1254,
+        "y": 299,
+        "w": 732,
+        "h": 90
+    },
+    {
+        "id": "73c63550.2d040c",
+        "type": "group",
+        "z": "b87ff581.195058",
+        "name": "format data",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "34c499c2.80f646",
+            "411bda98.cce924",
+            "33e9709f.053fc",
+            "d572690a.1c23e8"
+        ],
+        "x": 474,
+        "y": 699,
+        "w": 792,
+        "h": 82
+    },
+    {
+        "id": "a0e9173b.6c3788",
+        "type": "group",
+        "z": "b87ff581.195058",
+        "name": "get broker/personnel ID",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "658cac46.f27474",
+            "cdc7d07e.09f4",
+            "4565063c.bee238"
+        ],
+        "x": 1294,
+        "y": 679,
+        "w": 532,
+        "h": 82
+    },
+    {
+        "id": "3a1f45cf.49883a",
+        "type": "group",
+        "z": "b87ff581.195058",
+        "name": "queries setup",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "9608a9d7.0294e8",
+            "beb443f9.97a7b",
+            "8a9fd261.b8fcb",
+            "4dd472d0.98ba3c"
+        ],
+        "x": 1834,
+        "y": 639,
+        "w": 492,
+        "h": 122
+    },
+    {
+        "id": "82109846.41b788",
+        "type": "group",
+        "z": "b87ff581.195058",
+        "name": "get user points log",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "1acd0ba6.361004",
+            "f2e122c7.ad1c7",
+            "99486d23.66526"
+        ],
+        "x": 2694,
+        "y": 759,
+        "w": 532,
+        "h": 82
+    },
+    {
+        "id": "36981669.b5d48a",
+        "type": "group",
+        "z": "b87ff581.195058",
+        "name": "get ranking query",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "90740714.ea4eb8",
+            "84f1db7a.f893d8",
+            "3d7756bc.fa57ca"
+        ],
+        "x": 3554,
+        "y": 779,
+        "w": 532,
+        "h": 82
+    },
+    {
+        "id": "ae59be11.61eb5",
+        "type": "group",
+        "z": "b87ff581.195058",
+        "name": "feedback to bracelet",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "43869e02.98c39",
+            "8be39f39.df00f",
+            "e6bdf1e2.c0c8c"
+        ],
+        "x": 4274,
+        "y": 819,
+        "w": 592,
+        "h": 82
+    },
+    {
+        "id": "ad3d1e26.6c0de",
+        "type": "group",
+        "z": "6d9ee958.5bf188",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "f9b83484.3ca2a8",
+            "96bb1f72.7002a",
+            "382058af.0e6998"
+        ],
+        "x": 1654,
+        "y": 119
+    },
+    {
+        "id": "6909dfa9.c99ee",
+        "type": "mqtt-broker",
+        "z": "",
+        "name": "",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": false,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "e2ee4436.e7fe48",
+        "type": "MySQLdatabase",
+        "z": "",
+        "name": "db-config",
+        "host": "127.0.0.1",
+        "port": "3306",
+        "db": "projet001",
+        "tz": ""
+    },
+    {
+        "id": "63fc02c2.e957cc",
+        "type": "mqtt in",
+        "z": "b87ff581.195058",
+        "name": "",
+        "topic": "bracelet/auth/connect/#",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "6909dfa9.c99ee",
+        "x": 320,
+        "y": 340,
+        "wires": [
+            [
+                "71783c6f.62f5d4",
+                "548a9af9.9b9fc4"
+            ]
+        ]
+    },
+    {
+        "id": "71783c6f.62f5d4",
+        "type": "debug",
+        "z": "b87ff581.195058",
+        "name": "auth attempt log",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 560,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "548a9af9.9b9fc4",
+        "type": "function",
+        "z": "b87ff581.195058",
+        "name": "auth",
+        "func": "let msg_clone = msg;\nmsg_clone.old = {\n    payload : msg.payload,\n    topic : msg.topic\n};\n// \nmsg_clone.payload = [msg_clone.payload];\nmsg_clone.topic = \"SELECT COUNT(*) AS exist FROM `personnel` WHERE `macBracelet` = ?;\";\n\n// node.warn(msg);\nreturn msg_clone;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 530,
+        "y": 340,
+        "wires": [
+            [
+                "13fd72cb.83ff5d"
+            ]
+        ]
+    },
+    {
+        "id": "5f3ade4.2ffbb2",
+        "type": "mqtt out",
+        "z": "b87ff581.195058",
+        "g": "e80cfc64.ed868",
+        "name": "bracelet feedback",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "broker": "6909dfa9.c99ee",
+        "x": 1870,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "13fd72cb.83ff5d",
+        "type": "mysql",
+        "z": "b87ff581.195058",
+        "mydb": "e2ee4436.e7fe48",
+        "name": "mac adress check",
+        "x": 730,
+        "y": 340,
+        "wires": [
+            [
+                "c3054801.cd8408",
+                "be531e1d.cf4ec"
+            ]
+        ]
+    },
+    {
+        "id": "c3054801.cd8408",
+        "type": "debug",
+        "z": "b87ff581.195058",
+        "name": "query mac search log",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 980,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "be531e1d.cf4ec",
+        "type": "function",
+        "z": "b87ff581.195058",
+        "name": "auth result check",
+        "func": "let msg_clone = { ...msg };\n// msg_clone.topic = msg_clone.old.topic;\nmsg_clone.payload = false;\nmsg_clone.mac = msg_clone.old.payload;\nmsg_clone.broker = msg.old.topic.substring(msg.old.topic.lastIndexOf('/') + 1);\n// delete msg_clone.old;\n// \ntry{\n    if(msg.payload != null || msg.payload != 'null'){\n        msg_clone.payload = msg.payload[0].exist === 1 ? true : false;\n    }\n    return msg_clone;\n}catch(err){\n    node.error(err);\n    return msg_clone;\n}\n// return msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 970,
+        "y": 340,
+        "wires": [
+            [
+                "21fa0784.e8a168",
+                "8dc466b5.3a6ab8"
+            ]
+        ]
+    },
+    {
+        "id": "21fa0784.e8a168",
+        "type": "switch",
+        "z": "b87ff581.195058",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1170,
+        "y": 340,
+        "wires": [
+            [
+                "99af1579.5a0ff8",
+                "4401b002.10d9e"
+            ],
+            [
+                "86c0e3e0.435ca",
+                "68c72eda.dd7db"
+            ]
+        ]
+    },
+    {
+        "id": "8dc466b5.3a6ab8",
+        "type": "debug",
+        "z": "b87ff581.195058",
+        "name": "is auth log",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1190,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "99af1579.5a0ff8",
+        "type": "function",
+        "z": "b87ff581.195058",
+        "name": "autorisé",
+        "func": "let msg_clone = [{ ...msg }, { ...msg }];\n// ADD HISTORIQUE RECORD\nconst historique_action = 'connecté';\nmsg_clone[0].payload = [historique_action, msg.mac];\nmsg_clone[0].topic = \"INSERT INTO `historique` (`idHistorique`, `actionHistorique`, `dateHistorique`, `idPersonnel`) SELECT NULL, ?, NULL, `idPersonnel` FROM personnel WHERE macBracelet = ? LIMIT 1;\";\n// UPDATE ONLINE STATUS\nmsg_clone[1].payload = [msg.mac];\nmsg_clone[1].topic = \"UPDATE `personnel` SET `onlinePersonnel` = 1 WHERE `macBracelet` = ?\";\n// \nreturn msg_clone;",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1340,
+        "y": 220,
+        "wires": [
+            [
+                "29bae0e9.036f2"
+            ],
+            [
+                "71986554.4bffac"
+            ]
+        ],
+        "info": "if authorized update the personnel online status with **true**"
+    },
+    {
+        "id": "86c0e3e0.435ca",
+        "type": "function",
+        "z": "b87ff581.195058",
+        "name": "non autorisé",
+        "func": "msg.data = {};\nmsg.data.sujet = \"br_na_brace\";\nmsg.data.user = false;\nmsg.payload = false;\n//\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1350,
+        "y": 280,
+        "wires": [
+            [
+                "4d1b74ef.57f57c"
+            ]
+        ],
+        "info": "if not authorized insert a notification to database to keep track of unallowed divices connections"
+    },
+    {
+        "id": "68c72eda.dd7db",
+        "type": "function",
+        "z": "b87ff581.195058",
+        "g": "e80cfc64.ed868",
+        "name": "gen topic",
+        "func": "let msg_clone = { ...msg };\nconst device_channel_id = msg.old.topic.substring(msg.old.topic.lastIndexOf('/') + 1);\nmsg_clone.topic = `bracelet/auth/response/connect/${device_channel_id}`;\n//\ntry{\n    msg_clone.payload = false;\n    if(msg.payload != null && msg.payload != 'null'){\n        if(msg.payload.length == 1)\n            msg_clone.payload = JSON.stringify({msg : msg.payload[0].msg, points : msg.payload[0].points});\n    }\n    // \n    return msg_clone;\n}catch(err){\n    node.error(err);\n    msg_clone.payload = null;\n    return msg_clone;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1680,
+        "y": 340,
+        "wires": [
+            [
+                "5f3ade4.2ffbb2"
+            ]
+        ]
+    },
+    {
+        "id": "71986554.4bffac",
+        "type": "mysql",
+        "z": "b87ff581.195058",
+        "mydb": "e2ee4436.e7fe48",
+        "name": "update online status",
+        "x": 1580,
+        "y": 220,
+        "wires": [
+            [
+                "1cabc004.b2352",
+                "51299b4d.4fd6a4"
+            ]
+        ]
+    },
+    {
+        "id": "1cabc004.b2352",
+        "type": "debug",
+        "z": "b87ff581.195058",
+        "name": "online status update log",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1850,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "29bae0e9.036f2",
+        "type": "mysql",
+        "z": "b87ff581.195058",
+        "mydb": "e2ee4436.e7fe48",
+        "name": "historique",
+        "x": 1540,
+        "y": 160,
+        "wires": [
+            [
+                "bda414cc.2a4d88",
+                "524b6215.b8ebdc"
+            ]
+        ]
+    },
+    {
+        "id": "bda414cc.2a4d88",
+        "type": "debug",
+        "z": "b87ff581.195058",
+        "name": "historique insert log",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1750,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "524b6215.b8ebdc",
+        "type": "function",
+        "z": "b87ff581.195058",
+        "name": "insertion valdiation",
+        "func": "msg.data.sujet = \"db_e_s_histo\";\n// \ntry{\n    if(msg.payload != null && msg.payload != 'null')\n        msg.payload = msg.payload.affectedRows != 0 ? true : false;\n}catch(err){\n    node.error(err);\n    msg.payload = false;\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1750,
+        "y": 120,
+        "wires": [
+            [
+                "4d1b74ef.57f57c"
+            ]
+        ]
+    },
+    {
+        "id": "51299b4d.4fd6a4",
+        "type": "function",
+        "z": "b87ff581.195058",
+        "name": "update validation",
+        "func": "msg.data.sujet = \"db_e_u_perso\";\n// \ntry{\n    if(msg.payload != null && msg.payload != 'null')\n        msg.payload = msg.payload.affectedRows != 0 ? true : false;\n}catch(err){\n    node.error(err);\n    msg.payload = false;\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1830,
+        "y": 260,
+        "wires": [
+            [
+                "4d1b74ef.57f57c"
+            ]
+        ]
+    },
+    {
+        "id": "9036a906.c2f168",
+        "type": "mqtt in",
+        "z": "b87ff581.195058",
+        "name": "",
+        "topic": "bracelet/auth/disconnect/#",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "6909dfa9.c99ee",
+        "x": 330,
+        "y": 740,
+        "wires": [
+            [
+                "411bda98.cce924"
+            ]
+        ]
+    },
+    {
+        "id": "333f7763.0a55a8",
+        "type": "mqtt in",
+        "z": "6d9ee958.5bf188",
+        "name": "",
+        "topic": "bracelet/record/send/#",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "6909dfa9.c99ee",
+        "x": 200,
+        "y": 220,
+        "wires": [
+            [
+                "a631b00f.61984",
+                "df1915b2.0d72b8"
+            ]
+        ],
+        "info": "# payload format\n[{ data: { bc: \"\", oxy: \"\", temp: \"\" }, date: \"\" }];"
+    },
+    {
+        "id": "a631b00f.61984",
+        "type": "debug",
+        "z": "6d9ee958.5bf188",
+        "name": "received data",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 440,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "df1915b2.0d72b8",
+        "type": "change",
+        "z": "6d9ee958.5bf188",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "'",
+                "fromt": "str",
+                "to": "\"",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 460,
+        "y": 220,
+        "wires": [
+            [
+                "e9ea3793.64da58"
+            ]
+        ]
+    },
+    {
+        "id": "e9ea3793.64da58",
+        "type": "json",
+        "z": "6d9ee958.5bf188",
+        "name": "format object",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 690,
+        "y": 220,
+        "wires": [
+            [
+                "cc0bf5e.8abf308"
+            ]
+        ]
+    },
+    {
+        "id": "d37c098e.7e39d8",
+        "type": "function",
+        "z": "6d9ee958.5bf188",
+        "name": "build insertion query",
+        "func": "msg.payload = [];\nmsg.topic = \"INSERT INTO `record` (`idRecord`, `battementCoeur`, `temperature`, `oxygene`, `dateRecord`, `idBroker`, `idPersonnel`) VALUES \";\nconst broker_id = 1;\n// \nfor (let i = 0; i < msg.old.payload.records.length; i++) {\n    const record = msg.old.payload.records[i];\n    const data = record.data;\n    // \n    msg.payload.push(data.bc,data.temp,data.oxy,record.date,broker_id,msg.old.idPers);\n    msg.topic += '(NULL, ?, ?, ?, ?, ?, ?)';\n    // \n    if(i < msg.old.payload.records.length - 1)\n        msg.topic += ', ';\n}\n// \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 2480,
+        "y": 140,
+        "wires": [
+            [
+                "9be418d6.16c778",
+                "13010810.bf4d28"
+            ]
+        ]
+    },
+    {
+        "id": "cc0bf5e.8abf308",
+        "type": "function",
+        "z": "6d9ee958.5bf188",
+        "g": "6bda374.6c46bc8",
+        "name": "auth",
+        "func": "let msg_clone = msg;\nmsg_clone.old = {\n    payload : msg.payload,\n    topic : msg.topic\n};\n// \nmsg_clone.payload = [msg.payload.mac];\nmsg_clone.topic = \"SELECT COUNT(*) AS exist FROM `personnel` WHERE `macBracelet` = ?;\";\n\n// node.warn(msg);\nreturn msg_clone;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 870,
+        "y": 220,
+        "wires": [
+            [
+                "c2bcbf75.b641"
+            ]
+        ]
+    },
+    {
+        "id": "c2bcbf75.b641",
+        "type": "mysql",
+        "z": "6d9ee958.5bf188",
+        "g": "6bda374.6c46bc8",
+        "mydb": "e2ee4436.e7fe48",
+        "name": "mac adress check",
+        "x": 1070,
+        "y": 220,
+        "wires": [
+            [
+                "e836b84c.ad8818",
+                "9697f578.a53678"
+            ]
+        ]
+    },
+    {
+        "id": "e836b84c.ad8818",
+        "type": "debug",
+        "z": "6d9ee958.5bf188",
+        "g": "6bda374.6c46bc8",
+        "name": "query mac search log",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1320,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "9697f578.a53678",
+        "type": "function",
+        "z": "6d9ee958.5bf188",
+        "g": "6bda374.6c46bc8",
+        "name": "auth result check",
+        "func": "let msg_clone = { ...msg };\nmsg_clone.payload = false;\nmsg_clone.broker = msg.old.topic.substring(msg.old.topic.lastIndexOf('/') + 1);\n// \ntry{\n    if(msg.payload != null || msg.payload != 'null'){\n        msg_clone.payload = msg.payload[0].exist === 1 ? true : false;\n    }\n    return msg_clone;\n}catch(err){\n    node.error(err);\n    return msg_clone;\n}\n// return msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1310,
+        "y": 220,
+        "wires": [
+            [
+                "15b464d7.1478bb",
+                "5532a3ac.cdb47c"
+            ]
+        ]
+    },
+    {
+        "id": "15b464d7.1478bb",
+        "type": "switch",
+        "z": "6d9ee958.5bf188",
+        "g": "6bda374.6c46bc8",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1510,
+        "y": 220,
+        "wires": [
+            [
+                "f9b83484.3ca2a8"
+            ],
+            [
+                "2aabb027.1e7e3",
+                "acb5e82e.a90798"
+            ]
+        ]
+    },
+    {
+        "id": "5532a3ac.cdb47c",
+        "type": "debug",
+        "z": "6d9ee958.5bf188",
+        "g": "6bda374.6c46bc8",
+        "name": "is auth log",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1530,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "1aebe5ea.69008a",
+        "type": "comment",
+        "z": "6d9ee958.5bf188",
+        "g": "cd9b151b.0218f8",
+        "name": "error managment",
+        "info": "adopt this model for all wanted error managment\n---\nfor now this wont work\n**solution** => add an object called .error with data {error:'notificaction_topic',msg:'error_msg'}",
+        "x": 2800,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "8172d8ac.8314e8",
+        "type": "switch",
+        "z": "6d9ee958.5bf188",
+        "g": "cd9b151b.0218f8",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 2770,
+        "y": 300,
+        "wires": [
+            [
+                "f3a3e1ed.7a7bc",
+                "35abd741.161e78"
+            ]
+        ]
+    },
+    {
+        "id": "84663440.7a22e8",
+        "type": "mqtt out",
+        "z": "6d9ee958.5bf188",
+        "g": "cd9b151b.0218f8",
+        "name": "inform admin",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "broker": "6909dfa9.c99ee",
+        "x": 3650,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "f3a3e1ed.7a7bc",
+        "type": "debug",
+        "z": "6d9ee958.5bf188",
+        "g": "cd9b151b.0218f8",
+        "name": "error saving data",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2970,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "5f0a5a52.405e54",
+        "type": "mysql",
+        "z": "6d9ee958.5bf188",
+        "g": "cd9b151b.0218f8",
+        "mydb": "e2ee4436.e7fe48",
+        "name": "save notification",
+        "x": 3240,
+        "y": 240,
+        "wires": [
+            [
+                "ca8422cc.911a4",
+                "5a555f4b.9b555"
+            ]
+        ]
+    },
+    {
+        "id": "ca8422cc.911a4",
+        "type": "debug",
+        "z": "6d9ee958.5bf188",
+        "g": "cd9b151b.0218f8",
+        "name": "notification save log",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 3470,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "35abd741.161e78",
+        "type": "function",
+        "z": "6d9ee958.5bf188",
+        "g": "cd9b151b.0218f8",
+        "name": "prepare notification query",
+        "func": "// const sujet = \"db_e_s_histo\";\nconst sujet = msg.data.sujet;\nconst broker_id = 1;\nlet date = new Date(); \ndate = date.toISOString().slice(0, 19).replace('T', ' ');\nmsg.data.date = date;\n// \nmsg.payload = [sujet, date, broker_id, msg.data.user == false ? null : msg.old.payload.mac];\nif(msg.data.user == false)\n    msg.topic = \"INSERT INTO `notification` (`idNotification`, `sujetNotification`, `dateNotification`, `idBroker`, `idPersonnel`) VALUES(NULL, ?, ?, ?, ?);\";\nelse\n    msg.topic = \"INSERT INTO `notification` (`idNotification`, `sujetNotification`, `dateNotification`, `idBroker`, `idPersonnel`) SELECT NULL, ?, ?, ?, `idPersonnel` FROM personnel WHERE macBracelet = ? LIMIT 1;\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 2990,
+        "y": 240,
+        "wires": [
+            [
+                "5f0a5a52.405e54",
+                "3e4ddca4.2878a4"
+            ]
+        ]
+    },
+    {
+        "id": "5a555f4b.9b555",
+        "type": "function",
+        "z": "6d9ee958.5bf188",
+        "g": "cd9b151b.0218f8",
+        "name": "data format",
+        "func": "msg.topic = `admin/notif`;\nmsg.payload = JSON.stringify({code : msg.data.sujet, user : msg.old.payload.mac, date : msg.data.date, broker : msg.broker});\n// \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 3450,
+        "y": 300,
+        "wires": [
+            [
+                "84663440.7a22e8"
+            ]
+        ]
+    },
+    {
+        "id": "3e4ddca4.2878a4",
+        "type": "debug",
+        "z": "6d9ee958.5bf188",
+        "g": "cd9b151b.0218f8",
+        "name": "query log",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 3220,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "2aabb027.1e7e3",
+        "type": "function",
+        "z": "6d9ee958.5bf188",
+        "name": "mac not found",
+        "func": "msg.data = {};\nmsg.data.sujet = \"br_na_brace\";\nmsg.data.user = msg.old.payload.mac;\nmsg.payload = false;\n//\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1760,
+        "y": 260,
+        "wires": [
+            [
+                "8172d8ac.8314e8"
+            ]
+        ]
+    },
+    {
+        "id": "9be418d6.16c778",
+        "type": "mysql",
+        "z": "6d9ee958.5bf188",
+        "mydb": "e2ee4436.e7fe48",
+        "name": "insert records",
+        "x": 2720,
+        "y": 160,
+        "wires": [
+            [
+                "fcb8bea3.3da36",
+                "b018bcfa.bff23"
+            ]
+        ]
+    },
+    {
+        "id": "fcb8bea3.3da36",
+        "type": "debug",
+        "z": "6d9ee958.5bf188",
+        "name": "insert res",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2920,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "13010810.bf4d28",
+        "type": "debug",
+        "z": "6d9ee958.5bf188",
+        "name": "records query",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2720,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "b018bcfa.bff23",
+        "type": "function",
+        "z": "6d9ee958.5bf188",
+        "name": "insertion valdiation",
+        "func": "msg.data = {};\nmsg.data.sujet = \"db_e_s_record\";\n// \ntry{\n    if(msg.payload != null && msg.payload != 'null')\n        msg.payload = msg.payload.affectedRows != 0 ? true : false;\n    return msg;\n}catch(err){\n    node.error(err);\n    msg.payload = false;\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 2950,
+        "y": 160,
+        "wires": [
+            [
+                "8172d8ac.8314e8",
+                "6983602e.0d1f3",
+                "c92f8556.6507d8"
+            ]
+        ]
+    },
+    {
+        "id": "c92f8556.6507d8",
+        "type": "function",
+        "z": "6d9ee958.5bf188",
+        "name": "gen topic",
+        "func": "const device_channel_id = msg.old.topic.substring(msg.old.topic.lastIndexOf('/') + 1);\nmsg.topic = `bracelet/record/response/send/${device_channel_id}`;\n// \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 3160,
+        "y": 160,
+        "wires": [
+            [
+                "46b63046.22ee5",
+                "bf3db0fe.bbfe6"
+            ]
+        ]
+    },
+    {
+        "id": "46b63046.22ee5",
+        "type": "mqtt out",
+        "z": "6d9ee958.5bf188",
+        "name": "response back to broker",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "broker": "6909dfa9.c99ee",
+        "x": 3410,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "6983602e.0d1f3",
+        "type": "debug",
+        "z": "6d9ee958.5bf188",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 3150,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "bf3db0fe.bbfe6",
+        "type": "debug",
+        "z": "6d9ee958.5bf188",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 3350,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "acb5e82e.a90798",
+        "type": "function",
+        "z": "6d9ee958.5bf188",
+        "name": "gen topic",
+        "func": "const device_channel_id = msg.old.topic.substring(msg.old.topic.lastIndexOf('/') + 1);\nmsg.topic = `bracelet/record/response/send/${device_channel_id}`;\n// \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1740,
+        "y": 320,
+        "wires": [
+            [
+                "cf0e6fa3.3ebd7"
+            ]
+        ]
+    },
+    {
+        "id": "cf0e6fa3.3ebd7",
+        "type": "mqtt out",
+        "z": "6d9ee958.5bf188",
+        "name": "response back to broker",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "broker": "6909dfa9.c99ee",
+        "x": 1970,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "395eefb2.e57a3",
+        "type": "comment",
+        "z": "b87ff581.195058",
+        "g": "942f7098.7054e",
+        "name": "error managment",
+        "info": "adopt this model for all wanted error managment\n---\nfor now this wont work\n**solution** => add an object called .error with data {error:'notificaction_topic',msg:'error_msg'}",
+        "x": 2100,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "4d1b74ef.57f57c",
+        "type": "switch",
+        "z": "b87ff581.195058",
+        "g": "942f7098.7054e",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 2070,
+        "y": 280,
+        "wires": [
+            [
+                "915ff6da.2cd8b8",
+                "dcf0a613.328e08"
+            ]
+        ]
+    },
+    {
+        "id": "b09be085.ab77d",
+        "type": "mqtt out",
+        "z": "b87ff581.195058",
+        "g": "942f7098.7054e",
+        "name": "inform admin",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "broker": "6909dfa9.c99ee",
+        "x": 2950,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "915ff6da.2cd8b8",
+        "type": "debug",
+        "z": "b87ff581.195058",
+        "g": "942f7098.7054e",
+        "name": "error saving data",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2270,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "948a4b6b.081198",
+        "type": "mysql",
+        "z": "b87ff581.195058",
+        "g": "942f7098.7054e",
+        "mydb": "e2ee4436.e7fe48",
+        "name": "save notification",
+        "x": 2540,
+        "y": 220,
+        "wires": [
+            [
+                "41fd3889.0f12a8",
+                "ef6e76e4.d7df18"
+            ]
+        ]
+    },
+    {
+        "id": "41fd3889.0f12a8",
+        "type": "debug",
+        "z": "b87ff581.195058",
+        "g": "942f7098.7054e",
+        "name": "notification save log",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2770,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "dcf0a613.328e08",
+        "type": "function",
+        "z": "b87ff581.195058",
+        "g": "942f7098.7054e",
+        "name": "prepare notification query",
+        "func": "// const sujet = \"db_e_s_histo\";\nconst sujet = msg.data.sujet;\nconst broker_id = 1;\nlet date = new Date(); \ndate = date.toISOString().slice(0, 19).replace('T', ' ');\nmsg.data.date = date;\n// \nmsg.payload = [sujet, date, broker_id, msg.data.user == false ? null : msg.old.payload.mac || msg.old.payload.bracelet];\nif(msg.data.user == false)\n    msg.topic = \"INSERT INTO `notification` (`idNotification`, `sujetNotification`, `dateNotification`, `idBroker`, `idPersonnel`) VALUES(NULL, ?, ?, ?, ?);\";\nelse\n    msg.topic = \"INSERT INTO `notification` (`idNotification`, `sujetNotification`, `dateNotification`, `idBroker`, `idPersonnel`) SELECT NULL, ?, ?, ?, `idPersonnel` FROM personnel WHERE macBracelet = ? LIMIT 1;\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 2290,
+        "y": 220,
+        "wires": [
+            [
+                "948a4b6b.081198",
+                "78b2de96.df7c4"
+            ]
+        ]
+    },
+    {
+        "id": "ef6e76e4.d7df18",
+        "type": "function",
+        "z": "b87ff581.195058",
+        "g": "942f7098.7054e",
+        "name": "data format",
+        "func": "msg.topic = `admin/notif`;\nmsg.payload = JSON.stringify({code : msg.data.sujet, user : msg.mac, date : msg.data.date, broker : msg.broker});\n// \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 2750,
+        "y": 280,
+        "wires": [
+            [
+                "b09be085.ab77d"
+            ]
+        ]
+    },
+    {
+        "id": "78b2de96.df7c4",
+        "type": "debug",
+        "z": "b87ff581.195058",
+        "g": "942f7098.7054e",
+        "name": "query log",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2520,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "67724915.4fc798",
+        "type": "comment",
+        "z": "6d9ee958.5bf188",
+        "name": "access point -to- server (server)",
+        "info": "",
+        "x": 230,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "9698d9d7.f7e878",
+        "type": "comment",
+        "z": "b87ff581.195058",
+        "name": "access point -to- server (server)",
+        "info": "",
+        "x": 350,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "26720028.d6b4a",
+        "type": "comment",
+        "z": "28dc4249.5b735e",
+        "name": "Respect de la restriction de Zone ",
+        "info": "",
+        "x": 130,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "34ed6a77.fa7396",
+        "type": "mqtt in",
+        "z": "28dc4249.5b735e",
+        "name": "",
+        "topic": "bracelet/zone/check/#",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "6909dfa9.c99ee",
+        "x": 100,
+        "y": 260,
+        "wires": [
+            [
+                "759e9ae1.7089a4"
+            ]
+        ]
+    },
+    {
+        "id": "8d59c0d4.4bcd",
+        "type": "comment",
+        "z": "28dc4249.5b735e",
+        "name": "{bracelet -> broker de zone} -> server (this)",
+        "info": "",
+        "x": 160,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "5560575a.1e24b8",
+        "type": "comment",
+        "z": "28dc4249.5b735e",
+        "name": "skip auth",
+        "info": "",
+        "x": 700,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "5f8cace3.d63024",
+        "type": "function",
+        "z": "28dc4249.5b735e",
+        "name": "zone check query",
+        "func": "let msg_clone = msg;\nmsg_clone.old = {\n    payload : msg.payload,\n    topic : msg.topic\n};\nmsg_clone.payload = [msg.payload.bracelet_mac, msg.payload.broker_mac, msg.payload.bracelet_mac, msg.payload.broker_mac];\nmsg_clone.topic = \"SELECT SUM(nb) AS allowed FROM ( SELECT COUNT(idZone) AS nb FROM accesZone WHERE idPersonnel IN (SELECT idPersonnel FROM personnel WHERE macBracelet = ?) AND idZone IN (SELECT idZone FROM broker WHERE macBroker = ?) UNION ALL SELECT COUNT(idZone) AS nb FROM accesZoneTemp WHERE idPersonnel IN (SELECT idPersonnel FROM personnel WHERE macBracelet = ?) AND idZone IN (SELECT idZone FROM broker WHERE macBroker = ?) AND TIMESTAMPDIFF(SECOND, NOW(), dateF_AccesZT) >= 0 AND TIMESTAMPDIFF(SECOND, dateD_AccesZT, NOW()) >= 0 )a\"\n// \nreturn msg_clone;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 810,
+        "y": 260,
+        "wires": [
+            [
+                "f1e25d9e.b363c"
+            ]
+        ]
+    },
+    {
+        "id": "f1e25d9e.b363c",
+        "type": "mysql",
+        "z": "28dc4249.5b735e",
+        "mydb": "e2ee4436.e7fe48",
+        "name": "",
+        "x": 1020,
+        "y": 260,
+        "wires": [
+            [
+                "6198fb9b.6e0e34",
+                "11eb9339.d7099d"
+            ]
+        ]
+    },
+    {
+        "id": "759e9ae1.7089a4",
+        "type": "change",
+        "z": "28dc4249.5b735e",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "'",
+                "fromt": "str",
+                "to": "\"",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 360,
+        "y": 260,
+        "wires": [
+            [
+                "7cccd834.d50378"
+            ]
+        ]
+    },
+    {
+        "id": "7cccd834.d50378",
+        "type": "json",
+        "z": "28dc4249.5b735e",
+        "name": "format object",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 590,
+        "y": 260,
+        "wires": [
+            [
+                "5f8cace3.d63024"
+            ]
+        ]
+    },
+    {
+        "id": "6198fb9b.6e0e34",
+        "type": "debug",
+        "z": "28dc4249.5b735e",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1190,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "11eb9339.d7099d",
+        "type": "function",
+        "z": "28dc4249.5b735e",
+        "name": "data validation",
+        "func": "let msg_clone = { ...msg };\nmsg_clone.payload = false;\nmsg_clone.broker = msg.old.topic.substring(msg.old.topic.lastIndexOf('/') + 1);\n// \ntry{\n    if(msg.payload != null || msg.payload != 'null'){\n        msg_clone.payload = msg.payload[0].allowed <= 0 ? true : -1;\n    }\n    return msg_clone;\n}catch(err){\n    node.error(err);\n    return msg_clone;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1220,
+        "y": 260,
+        "wires": [
+            [
+                "7c5a19e6.679a98"
+            ]
+        ]
+    },
+    {
+        "id": "2916b92c.0e91e6",
+        "type": "comment",
+        "z": "28dc4249.5b735e",
+        "g": "aadac8bf.c39db8",
+        "name": "error managment",
+        "info": "adopt this model for all wanted error managment\n---\nfor now this wont work\n**solution** => add an object called .error with data {error:'notificaction_topic',msg:'error_msg'}",
+        "x": 1680,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "26ebd14b.28d68e",
+        "type": "switch",
+        "z": "28dc4249.5b735e",
+        "g": "aadac8bf.c39db8",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1650,
+        "y": 400,
+        "wires": [
+            [
+                "5f3707b0.4e78e8",
+                "b20832d0.e97ff"
+            ]
+        ]
+    },
+    {
+        "id": "ae0a4544.404b58",
+        "type": "mqtt out",
+        "z": "28dc4249.5b735e",
+        "g": "aadac8bf.c39db8",
+        "name": "inform admin",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "broker": "6909dfa9.c99ee",
+        "x": 2530,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "5f3707b0.4e78e8",
+        "type": "debug",
+        "z": "28dc4249.5b735e",
+        "g": "aadac8bf.c39db8",
+        "name": "error saving data",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1850,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "8f51befd.49b77",
+        "type": "mysql",
+        "z": "28dc4249.5b735e",
+        "g": "aadac8bf.c39db8",
+        "mydb": "e2ee4436.e7fe48",
+        "name": "save notification",
+        "x": 2120,
+        "y": 340,
+        "wires": [
+            [
+                "5514250b.90d46c",
+                "c3a28c49.ba2dd"
+            ]
+        ]
+    },
+    {
+        "id": "5514250b.90d46c",
+        "type": "debug",
+        "z": "28dc4249.5b735e",
+        "g": "aadac8bf.c39db8",
+        "name": "notification save log",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2350,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "b20832d0.e97ff",
+        "type": "function",
+        "z": "28dc4249.5b735e",
+        "g": "aadac8bf.c39db8",
+        "name": "prepare notification query",
+        "func": "// const sujet = \"db_e_s_histo\";\nconst sujet = msg.data.sujet;\nconst broker_id = 1;\nlet date = new Date(); \ndate = date.toISOString().slice(0, 19).replace('T', ' ');\nmsg.data.date = date;\n// \nmsg.payload = [sujet, date, broker_id, msg.data.user == false ? null : msg.old.payload.bracelet_mac];\nif(msg.data.user == false)\n    msg.topic = \"INSERT INTO `notification` (`idNotification`, `sujetNotification`, `dateNotification`, `idBroker`, `idPersonnel`) VALUES(NULL, ?, ?, ?, ?);\";\nelse\n    msg.topic = \"INSERT INTO `notification` (`idNotification`, `sujetNotification`, `dateNotification`, `idBroker`, `idPersonnel`) SELECT NULL, ?, ?, ?, `idPersonnel` FROM personnel WHERE macBracelet = ? LIMIT 1;\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1870,
+        "y": 340,
+        "wires": [
+            [
+                "8f51befd.49b77",
+                "12f664c7.a6cf0b"
+            ]
+        ]
+    },
+    {
+        "id": "c3a28c49.ba2dd",
+        "type": "function",
+        "z": "28dc4249.5b735e",
+        "g": "aadac8bf.c39db8",
+        "name": "data format",
+        "func": "msg.topic = `admin/notif`;\nmsg.payload = JSON.stringify({code : msg.data.sujet, user : msg.old.payload.bracelet_mac, date : msg.data.date, broker : msg.broker});\n// \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 2330,
+        "y": 400,
+        "wires": [
+            [
+                "ae0a4544.404b58"
+            ]
+        ]
+    },
+    {
+        "id": "12f664c7.a6cf0b",
+        "type": "debug",
+        "z": "28dc4249.5b735e",
+        "g": "aadac8bf.c39db8",
+        "name": "query log",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2100,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "7c5a19e6.679a98",
+        "type": "switch",
+        "z": "28dc4249.5b735e",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1410,
+        "y": 260,
+        "wires": [
+            [
+                "44059bb.8da3564",
+                "1e8d7fbe.3b223",
+                "53684ca8.e6fe54"
+            ],
+            [
+                "a8abd4d6.780238"
+            ]
+        ]
+    },
+    {
+        "id": "44059bb.8da3564",
+        "type": "debug",
+        "z": "28dc4249.5b735e",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1730,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "60b099fa.9ddde8",
+        "type": "function",
+        "z": "28dc4249.5b735e",
+        "name": "zoneLog query",
+        "func": "const zoneLog_status = '-1';\nlet date = new Date(); \ndate = date.toISOString().slice(0, 19).replace('T', ' ');\n// \nmsg.payload = [date, zoneLog_status, msg.old.payload.broker_mac, msg.old.payload.bracelet_mac];\nmsg.topic = \"INSERT INTO `zoneLog` (`idZoneLog`, `dateZoneLog`, `compteurZoneLog`, `idPersonnel`, `idBroker`) SELECT NULL, ?, ?, p.`idPersonnel`, b.`idBroker` FROM personnel AS p, broker AS b WHERE b.idBroker IN (SELECT idBroker FROM broker WHERE macBroker = ?) AND p.idPersonnel IN (SELECT idPersonnel FROM personnel WHERE macBracelet = ?)\"\n// \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1740,
+        "y": 260,
+        "wires": [
+            [
+                "215c66bb.2216fa"
+            ]
+        ]
+    },
+    {
+        "id": "215c66bb.2216fa",
+        "type": "mysql",
+        "z": "28dc4249.5b735e",
+        "mydb": "e2ee4436.e7fe48",
+        "name": "",
+        "x": 1940,
+        "y": 260,
+        "wires": [
+            [
+                "d9a124cb.1c7388",
+                "72e48ef2.fb17d"
+            ]
+        ]
+    },
+    {
+        "id": "d9a124cb.1c7388",
+        "type": "debug",
+        "z": "28dc4249.5b735e",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2130,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "72e48ef2.fb17d",
+        "type": "switch",
+        "z": "28dc4249.5b735e",
+        "name": "",
+        "property": "payload.affectedRows",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 2110,
+        "y": 260,
+        "wires": [
+            [
+                "2d9f55a9.b3df2a"
+            ],
+            [
+                "f3f3e05f.48502"
+            ]
+        ]
+    },
+    {
+        "id": "eecebd7c.04a18",
+        "type": "delay",
+        "z": "28dc4249.5b735e",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "20",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 2500,
+        "y": 260,
+        "wires": [
+            [
+                "4fac3ef7.e7256"
+            ]
+        ]
+    },
+    {
+        "id": "1e8d7fbe.3b223",
+        "type": "function",
+        "z": "28dc4249.5b735e",
+        "name": "Ping bracelet",
+        "func": "const device_channel_id = msg.old.topic.substring(msg.old.topic.lastIndexOf('/') + 1);\nmsg.topic = `bracelet/zone/response/check/${device_channel_id}`;\nmsg.payload = JSON.stringify({code : \"z_na\", mac : msg.old.payload.bracelet_mac});\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1730,
+        "y": 100,
+        "wires": [
+            [
+                "71a9e698.b14608"
+            ]
+        ]
+    },
+    {
+        "id": "71a9e698.b14608",
+        "type": "mqtt out",
+        "z": "28dc4249.5b735e",
+        "name": "présence non autorisé",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "broker": "6909dfa9.c99ee",
+        "x": 1960,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "2d9f55a9.b3df2a",
+        "type": "function",
+        "z": "28dc4249.5b735e",
+        "name": "affect insertId",
+        "func": "msg.contextId = msg.payload.insertId;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 2300,
+        "y": 260,
+        "wires": [
+            [
+                "41e24252.4cf02c"
+            ]
+        ]
+    },
+    {
+        "id": "ee4a0163.da52c",
+        "type": "function",
+        "z": "28dc4249.5b735e",
+        "name": "ensure record",
+        "func": "msg.payload = [msg.old.payload.bracelet_mac];\nmsg.topic = \"SELECT `zoneLog`.*, broker.idZone FROM `zoneLog`, `broker` WHERE `broker`.idBroker = `zoneLog`.idBroker AND idPersonnel IN (SELECT idPersonnel FROM personnel WHERE macBracelet = ?) ORDER BY `dateZoneLog` DESC\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 2880,
+        "y": 260,
+        "wires": [
+            [
+                "4290086c.4d2458"
+            ]
+        ]
+    },
+    {
+        "id": "37796ce.3620594",
+        "type": "debug",
+        "z": "28dc4249.5b735e",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 3270,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "4290086c.4d2458",
+        "type": "mysql",
+        "z": "28dc4249.5b735e",
+        "mydb": "e2ee4436.e7fe48",
+        "name": "",
+        "x": 3080,
+        "y": 260,
+        "wires": [
+            [
+                "37796ce.3620594",
+                "bd37aa27.51dc98"
+            ]
+        ]
+    },
+    {
+        "id": "bd37aa27.51dc98",
+        "type": "function",
+        "z": "28dc4249.5b735e",
+        "name": "check if is last",
+        "func": "msg.preload = msg.payload;\nif(msg.payload.length > 0){\n    msg.payload = msg.payload[0].idZoneLog == msg.contextId ? true : false;\n}else msg.payload = -1;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 3280,
+        "y": 260,
+        "wires": [
+            [
+                "53c99a53.060d44"
+            ]
+        ]
+    },
+    {
+        "id": "53c99a53.060d44",
+        "type": "switch",
+        "z": "28dc4249.5b735e",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "-1",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 3470,
+        "y": 260,
+        "wires": [
+            [
+                "33bcd889.42aff8"
+            ],
+            [],
+            [
+                "2adc03e6.e2ab8c"
+            ]
+        ]
+    },
+    {
+        "id": "2adc03e6.e2ab8c",
+        "type": "function",
+        "z": "28dc4249.5b735e",
+        "name": "check if in zone",
+        "func": "msg.payload = msg.preload[0].idZone == msg.zone ? true : false;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 3660,
+        "y": 280,
+        "wires": [
+            [
+                "39b57ef6.f38752"
+            ]
+        ]
+    },
+    {
+        "id": "53684ca8.e6fe54",
+        "type": "function",
+        "z": "28dc4249.5b735e",
+        "name": "broker zone",
+        "func": "msg.payload = [msg.old.payload.broker_mac];\nmsg.topic = \"SELECT idZone FROM broker WHERE macBroker = ?\";\n// \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1630,
+        "y": 200,
+        "wires": [
+            [
+                "bee0f0a2.bb7b4"
+            ]
+        ]
+    },
+    {
+        "id": "bee0f0a2.bb7b4",
+        "type": "mysql",
+        "z": "28dc4249.5b735e",
+        "mydb": "e2ee4436.e7fe48",
+        "name": "",
+        "x": 1800,
+        "y": 200,
+        "wires": [
+            [
+                "fc973aa0.85c798"
+            ]
+        ]
+    },
+    {
+        "id": "fc973aa0.85c798",
+        "type": "function",
+        "z": "28dc4249.5b735e",
+        "name": "set zone",
+        "func": "msg.zone = msg.payload[0].idZone;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1940,
+        "y": 200,
+        "wires": [
+            [
+                "60b099fa.9ddde8"
+            ]
+        ]
+    },
+    {
+        "id": "4fac3ef7.e7256",
+        "type": "delay",
+        "z": "28dc4249.5b735e",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 2680,
+        "y": 260,
+        "wires": [
+            [
+                "8dfa98f8.47f9c8",
+                "459f0d41.65be14"
+            ]
+        ]
+    },
+    {
+        "id": "33bcd889.42aff8",
+        "type": "function",
+        "z": "28dc4249.5b735e",
+        "name": "",
+        "func": "msg.p_next = true;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 3640,
+        "y": 220,
+        "wires": [
+            [
+                "e703a701.217478"
+            ]
+        ]
+    },
+    {
+        "id": "39b57ef6.f38752",
+        "type": "switch",
+        "z": "28dc4249.5b735e",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 3850,
+        "y": 280,
+        "wires": [
+            [
+                "821b6ce1.6d358"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "821b6ce1.6d358",
+        "type": "function",
+        "z": "28dc4249.5b735e",
+        "name": "",
+        "func": "msg.p_next = false;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 4020,
+        "y": 280,
+        "wires": [
+            [
+                "e703a701.217478"
+            ]
+        ]
+    },
+    {
+        "id": "e703a701.217478",
+        "type": "function",
+        "z": "28dc4249.5b735e",
+        "name": "update time query",
+        "func": "msg.payload = [5, msg.contextId];\nmsg.topic = \"UPDATE zoneLog SET compteurZoneLog = compteurZoneLog + ? WHERE idZoneLog = ?\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 3890,
+        "y": 340,
+        "wires": [
+            [
+                "2692b318.976b1c"
+            ]
+        ]
+    },
+    {
+        "id": "949bedcf.8d965",
+        "type": "function",
+        "z": "28dc4249.5b735e",
+        "name": "insert charge query",
+        "func": "// const raison = `Ne pas maintenir la distance sociale`;\nconst raison = `Zone non autoriser`;\nlet date = new Date(); \ndate = date.toISOString().slice(0, 19).replace('T', ' ');\n// \nmsg.payload = [raison, date, -5, msg.old.payload.bracelet_mac, msg.old.payload.broker_mac];\nmsg.topic = \"INSERT INTO `recordPoints` (`idRecordPoints`, `raisonRecordPoints`, `dateRecordPoints`, `nbPoints`, `idBroker`, `idPersonnel`) SELECT NULL, ?, ?, ?, idBroker, idPersonnel FROM personnel AS p, broker AS b WHERE idPersonnel IN (SELECT idPersonnel FROM personnel WHERE macBracelet = ?) AND idBroker IN (SELECT idBroker FROM broker WHERE macBroker = ?)\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 4310,
+        "y": 340,
+        "wires": [
+            [
+                "235533f1.a9ab7c",
+                "8eae2e11.20adf"
+            ]
+        ]
+    },
+    {
+        "id": "2692b318.976b1c",
+        "type": "mysql",
+        "z": "28dc4249.5b735e",
+        "mydb": "e2ee4436.e7fe48",
+        "name": "",
+        "x": 4100,
+        "y": 340,
+        "wires": [
+            [
+                "949bedcf.8d965",
+                "2da003a8.df45dc"
+            ]
+        ]
+    },
+    {
+        "id": "235533f1.a9ab7c",
+        "type": "mysql",
+        "z": "28dc4249.5b735e",
+        "mydb": "e2ee4436.e7fe48",
+        "name": "",
+        "x": 4540,
+        "y": 340,
+        "wires": [
+            [
+                "c36d7a1.3964f88",
+                "8c82c690.4c0f88",
+                "5e0aa2ed.f8fe6c"
+            ]
+        ]
+    },
+    {
+        "id": "8c82c690.4c0f88",
+        "type": "switch",
+        "z": "28dc4249.5b735e",
+        "name": "",
+        "property": "p_next",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 4710,
+        "y": 340,
+        "wires": [
+            [
+                "4fac3ef7.e7256"
+            ]
+        ]
+    },
+    {
+        "id": "6b11bf37.b49b9",
+        "type": "function",
+        "z": "28dc4249.5b735e",
+        "name": "error check",
+        "func": "try{\n    if(msg.payload != null && msg.payload != 'null')\n        msg.payload = msg.payload.affectedRows != 0 ? true : false;\n    return msg;\n}catch(err){\n    node.error(err);\n    msg.payload = false;\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 4330,
+        "y": 400,
+        "wires": [
+            [
+                "26ebd14b.28d68e"
+            ]
+        ]
+    },
+    {
+        "id": "2da003a8.df45dc",
+        "type": "function",
+        "z": "28dc4249.5b735e",
+        "name": "",
+        "func": "msg.data = {};\nmsg.data.sujet = \"db_e_u_zoneLog\";\n// \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 4100,
+        "y": 400,
+        "wires": [
+            [
+                "6b11bf37.b49b9"
+            ]
+        ]
+    },
+    {
+        "id": "c36d7a1.3964f88",
+        "type": "function",
+        "z": "28dc4249.5b735e",
+        "name": "",
+        "func": "msg.data = {};\nmsg.data.sujet = \"db_e_s_recordPoints\";\n// \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 4520,
+        "y": 400,
+        "wires": [
+            [
+                "6b11bf37.b49b9"
+            ]
+        ]
+    },
+    {
+        "id": "41e24252.4cf02c",
+        "type": "function",
+        "z": "28dc4249.5b735e",
+        "name": "check query",
+        "func": "msg.payload = [msg.zone, msg.old.payload.bracelet_mac];\nmsg.topic = \"SELECT IFNULL(SUM(`compteurZoneLog`), -1) as `count` FROM `zoneLog` WHERE `idBroker` IN (SELECT `idBroker` FROM broker WHERE idZone = ?) AND idPersonnel IN (SELECT idPersonnel FROM personnel WHERE macBracelet = ?)\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 2310,
+        "y": 200,
+        "wires": [
+            [
+                "66f08440.aecb3c"
+            ]
+        ]
+    },
+    {
+        "id": "66f08440.aecb3c",
+        "type": "mysql",
+        "z": "28dc4249.5b735e",
+        "mydb": "e2ee4436.e7fe48",
+        "name": "",
+        "x": 2500,
+        "y": 200,
+        "wires": [
+            [
+                "d9c898de.f4bcc8",
+                "8db8d740.f9e558"
+            ]
+        ]
+    },
+    {
+        "id": "8db8d740.f9e558",
+        "type": "switch",
+        "z": "28dc4249.5b735e",
+        "name": "",
+        "property": "payload[0].count",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "lte",
+                "v": "-1",
+                "vt": "num"
+            },
+            {
+                "t": "gte",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 2670,
+        "y": 200,
+        "wires": [
+            [
+                "eecebd7c.04a18",
+                "c66ae8c.34ff418"
+            ],
+            [
+                "4fac3ef7.e7256"
+            ]
+        ]
+    },
+    {
+        "id": "8eae2e11.20adf",
+        "type": "debug",
+        "z": "28dc4249.5b735e",
+        "name": "insert query",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 4550,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "76c2c988.f55dc8",
+        "type": "comment",
+        "z": "28dc4249.5b735e",
+        "name": "check if >= 600 then closure",
+        "info": "",
+        "x": 2780,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "5e0aa2ed.f8fe6c",
+        "type": "debug",
+        "z": "28dc4249.5b735e",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 4730,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "d9c898de.f4bcc8",
+        "type": "debug",
+        "z": "28dc4249.5b735e",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2650,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "c66ae8c.34ff418",
+        "type": "function",
+        "z": "28dc4249.5b735e",
+        "name": "init counter to 0",
+        "func": "msg.payload = [0, msg.contextId];\nmsg.topic = \"UPDATE zoneLog SET compteurZoneLog = ? WHERE idZoneLog = ?\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 2880,
+        "y": 140,
+        "wires": [
+            [
+                "dafb3442.0a4e58"
+            ]
+        ]
+    },
+    {
+        "id": "dafb3442.0a4e58",
+        "type": "mysql",
+        "z": "28dc4249.5b735e",
+        "mydb": "e2ee4436.e7fe48",
+        "name": "",
+        "x": 3080,
+        "y": 140,
+        "wires": [
+            [
+                "2d68a837.1a4498"
+            ]
+        ]
+    },
+    {
+        "id": "2d68a837.1a4498",
+        "type": "debug",
+        "z": "28dc4249.5b735e",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 3270,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "a8abd4d6.780238",
+        "type": "function",
+        "z": "28dc4249.5b735e",
+        "name": "",
+        "func": "msg.data = {};\nmsg.data.sujet = \"co_br_brZo\";\nmsg.data.user = true;\n// \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1460,
+        "y": 340,
+        "wires": [
+            [
+                "26ebd14b.28d68e"
+            ]
+        ]
+    },
+    {
+        "id": "f3f3e05f.48502",
+        "type": "function",
+        "z": "28dc4249.5b735e",
+        "name": "",
+        "func": "msg.data = {};\nmsg.data.sujet = \"db_e_s_zoneLog\";\nmsg.data.user = true;\n// \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1460,
+        "y": 400,
+        "wires": [
+            [
+                "26ebd14b.28d68e"
+            ]
+        ]
+    },
+    {
+        "id": "8dfa98f8.47f9c8",
+        "type": "function",
+        "z": "28dc4249.5b735e",
+        "name": "10min check query",
+        "func": "const zoneId = msg.zone;\nconst userMac = msg.old.payload.bracelet_mac;\nconst timeInterval = 10; // in minutes\n// \nmsg.payload = [timeInterval, userMac, zoneId];\nmsg.topic = \"SELECT DISTINCT IFNULL(SUM(`compteurZoneLog`), 0) AS timeSpent FROM `zoneLog` WHERE TIMESTAMPDIFF(MINUTE, dateZoneLog, now()) <= ? AND idPersonnel IN (SELECT idPersonnel FROM personnel WHERE macBracelet = ?) AND idBroker IN (SELECT idbroker FROM broker WHERE idZone = ?) ORDER BY dateZoneLog DESC\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 2670,
+        "y": 500,
+        "wires": [
+            [
+                "c4182ec.b0b13d"
+            ]
+        ]
+    },
+    {
+        "id": "c4182ec.b0b13d",
+        "type": "mysql",
+        "z": "28dc4249.5b735e",
+        "mydb": "e2ee4436.e7fe48",
+        "name": "",
+        "x": 2860,
+        "y": 500,
+        "wires": [
+            [
+                "66f01df5.0e5114",
+                "466f92bd.e8ae7c"
+            ]
+        ]
+    },
+    {
+        "id": "66f01df5.0e5114",
+        "type": "switch",
+        "z": "28dc4249.5b735e",
+        "name": "",
+        "property": "payload[0].timeSpent",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "lt",
+                "v": "600",
+                "vt": "num"
+            },
+            {
+                "t": "gte",
+                "v": "600",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 3010,
+        "y": 500,
+        "wires": [
+            [
+                "ee4a0163.da52c"
+            ],
+            [
+                "58c19c40.381024"
+            ]
+        ]
+    },
+    {
+        "id": "58c19c40.381024",
+        "type": "function",
+        "z": "28dc4249.5b735e",
+        "name": "inform manager",
+        "func": "msg.data = {};\nmsg.data.sujet = \"br_na_z\";\nmsg.data.user = true;\nmsg.payload = false;\n// \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 3180,
+        "y": 500,
+        "wires": [
+            [
+                "26ebd14b.28d68e"
+            ]
+        ]
+    },
+    {
+        "id": "466f92bd.e8ae7c",
+        "type": "debug",
+        "z": "28dc4249.5b735e",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 3030,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "77fa65ee.0925ac",
+        "type": "mqtt in",
+        "z": "d035534c.e2f29",
+        "name": "",
+        "topic": "bracelet/convergence/send/#",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "6909dfa9.c99ee",
+        "x": 240,
+        "y": 220,
+        "wires": [
+            [
+                "9d8dc3ee.fe402"
+            ]
+        ]
+    },
+    {
+        "id": "5e5617ad.0ec988",
+        "type": "comment",
+        "z": "d035534c.e2f29",
+        "name": "Distance sociale ",
+        "info": "",
+        "x": 200,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "9d8dc3ee.fe402",
+        "type": "change",
+        "z": "d035534c.e2f29",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "'",
+                "fromt": "str",
+                "to": "\"",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 520,
+        "y": 220,
+        "wires": [
+            [
+                "cf5fac6b.1a035"
+            ]
+        ]
+    },
+    {
+        "id": "cf5fac6b.1a035",
+        "type": "json",
+        "z": "d035534c.e2f29",
+        "name": "format object",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 750,
+        "y": 220,
+        "wires": [
+            [
+                "8184b31c.96f23"
+            ]
+        ]
+    },
+    {
+        "id": "8184b31c.96f23",
+        "type": "function",
+        "z": "d035534c.e2f29",
+        "name": "",
+        "func": "let msg_clone = msg;\nmsg_clone.old = {\n    payload : msg.payload,\n    topic : msg.topic\n};\n// \nmsg_clone.payload = msg_clone.payload.data && msg_clone.payload.data.length > 0 ? true : false;\n// \nreturn msg_clone;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 940,
+        "y": 220,
+        "wires": [
+            [
+                "ffc59a58.bb5df8"
+            ]
+        ]
+    },
+    {
+        "id": "a6e3ed92.de28b",
+        "type": "catch",
+        "z": "b87ff581.195058",
+        "name": "",
+        "scope": null,
+        "uncaught": true,
+        "x": 1740,
+        "y": 300,
+        "wires": [
+            [
+                "55370c57.567284",
+                "ca6f98e0.c8c7d8"
+            ]
+        ]
+    },
+    {
+        "id": "55370c57.567284",
+        "type": "function",
+        "z": "b87ff581.195058",
+        "name": "",
+        "func": "msg.data.sujet = msg.error.message;\nmsg.payload = false;\nmsg.data.user = false;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1920,
+        "y": 300,
+        "wires": [
+            [
+                "4d1b74ef.57f57c"
+            ]
+        ]
+    },
+    {
+        "id": "f023b80f.905948",
+        "type": "function",
+        "z": "28dc4249.5b735e",
+        "name": "",
+        "func": "msg.data.sujet = msg.error.message;\nmsg.payload = false;\nmsg.data.user = false;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1460,
+        "y": 460,
+        "wires": [
+            [
+                "26ebd14b.28d68e"
+            ]
+        ]
+    },
+    {
+        "id": "1a12f1c7.7f0c6e",
+        "type": "catch",
+        "z": "28dc4249.5b735e",
+        "name": "",
+        "scope": null,
+        "uncaught": true,
+        "x": 1280,
+        "y": 460,
+        "wires": [
+            [
+                "f023b80f.905948"
+            ]
+        ]
+    },
+    {
+        "id": "ffc59a58.bb5df8",
+        "type": "switch",
+        "z": "d035534c.e2f29",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1110,
+        "y": 220,
+        "wires": [
+            [
+                "ff3669bc.f0c278"
+            ],
+            [
+                "1aafdbd0.35d8a4"
+            ]
+        ]
+    },
+    {
+        "id": "60e32b3c.df3a24",
+        "type": "function",
+        "z": "d035534c.e2f29",
+        "name": "prepare insert query",
+        "func": "const data = msg.old.payload.data[0];\n// \nmsg.payload = [data.date, data.distance, msg.old.payload.broker, data.bracelet_1, data.bracelet_2];\nmsg.topic = \"INSERT INTO convergence (`idConvergence`, `dateConvergence`, `distanceConvergence`, `idBroker`, `idPersonnel`, `idPersonnel_2`) SELECT NULL, ?, ?, br.idBroker, pr1.idPersonnel, pr2.idPersonnel FROM broker AS br, personnel AS pr1, personnel AS pr2 WHERE br.idBroker IN (SELECT idBroker FROM broker WHERE macBroker = ?) AND pr1.idPersonnel IN (SELECT idPersonnel FROM personnel WHERE macBracelet = ?) AND pr2.idPersonnel IN (SELECT idPersonnel FROM personnel WHERE macBracelet = ?)\";\n// \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1920,
+        "y": 220,
+        "wires": [
+            [
+                "da91f93.eedaf08"
+            ]
+        ]
+    },
+    {
+        "id": "da91f93.eedaf08",
+        "type": "mysql",
+        "z": "d035534c.e2f29",
+        "mydb": "e2ee4436.e7fe48",
+        "name": "",
+        "x": 2140,
+        "y": 220,
+        "wires": [
+            [
+                "3ad76345.5ffb7c",
+                "b955564c.3ede18"
+            ]
+        ]
+    },
+    {
+        "id": "ff3669bc.f0c278",
+        "type": "function",
+        "z": "d035534c.e2f29",
+        "name": "search for duplicates",
+        "func": "const data = msg.old.payload.data[0];\nconst delay_interval = 5;\n// \nmsg.payload = [data.bracelet_1, data.bracelet_2, data.bracelet_1, data.bracelet_2, data.date, delay_interval, delay_interval, data.distance];\nmsg.topic = \"SELECT COUNT(*) as `exist` FROM `convergence` WHERE `idPersonnel` IN (SELECT `idPersonnel` FROM personnel WHERE macBracelet = ? OR `idPersonnel` IN (SELECT `idPersonnel` FROM personnel WHERE macBracelet = ?)) AND `idPersonnel_2` IN (SELECT `idPersonnel` FROM personnel WHERE macBracelet = ? OR `idPersonnel_2` IN (SELECT `idPersonnel` FROM personnel WHERE macBracelet = ?)) AND TIMESTAMPDIFF(SECOND, `dateConvergence`, ?) BETWEEN -? AND ? AND CAST(`distanceConvergence` AS CHAR) = ?\"\n// \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1320,
+        "y": 220,
+        "wires": [
+            [
+                "6dede4e.1e0b51c",
+                "d57f92da.d0352"
+            ]
+        ]
+    },
+    {
+        "id": "6dede4e.1e0b51c",
+        "type": "mysql",
+        "z": "d035534c.e2f29",
+        "mydb": "e2ee4436.e7fe48",
+        "name": "",
+        "x": 1540,
+        "y": 220,
+        "wires": [
+            [
+                "db25100.cbae7f",
+                "a3eda293.9b175"
+            ]
+        ]
+    },
+    {
+        "id": "db25100.cbae7f",
+        "type": "switch",
+        "z": "d035534c.e2f29",
+        "name": "",
+        "property": "payload[0].exist",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            },
+            {
+                "t": "gt",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1710,
+        "y": 220,
+        "wires": [
+            [
+                "60e32b3c.df3a24"
+            ],
+            [
+                "f3130158.2e87c"
+            ]
+        ]
+    },
+    {
+        "id": "f3130158.2e87c",
+        "type": "function",
+        "z": "d035534c.e2f29",
+        "name": "",
+        "func": "if(msg.old.payload.data.length > 1){\n    msg.old.payload.data.shift();\n    msg.payload = true;\n}else msg.payload = false;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1280,
+        "y": 140,
+        "wires": [
+            [
+                "bb96fd84.87c9c"
+            ]
+        ]
+    },
+    {
+        "id": "bb96fd84.87c9c",
+        "type": "switch",
+        "z": "d035534c.e2f29",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1430,
+        "y": 140,
+        "wires": [
+            [
+                "958c9f94.c8eeb"
+            ],
+            [
+                "ff3669bc.f0c278"
+            ]
+        ]
+    },
+    {
+        "id": "a3eda293.9b175",
+        "type": "debug",
+        "z": "d035534c.e2f29",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload[0].exist",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1760,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "3ad76345.5ffb7c",
+        "type": "debug",
+        "z": "d035534c.e2f29",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2330,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "958c9f94.c8eeb",
+        "type": "debug",
+        "z": "d035534c.e2f29",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1680,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "b955564c.3ede18",
+        "type": "function",
+        "z": "d035534c.e2f29",
+        "name": "",
+        "func": "msg.data = {};\nmsg.data.sujet = \"db_e_s_convergence\";\nmsg.data.user = true;\ntry{\n    if(msg.payload != null && msg.payload != 'null')\n        msg.payload = msg.payload.affectedRows != 0 ? true : false;\n    return msg;\n}catch(err){\n    node.error(err);\n    msg.payload = false;\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 2320,
+        "y": 220,
+        "wires": [
+            [
+                "572a3a86.fe5f54"
+            ]
+        ]
+    },
+    {
+        "id": "b44fc4a6.814338",
+        "type": "comment",
+        "z": "d035534c.e2f29",
+        "g": "49482583.75675c",
+        "name": "error managment",
+        "info": "adopt this model for all wanted error managment\n---\nfor now this wont work\n**solution** => add an object called .error with data {error:'notificaction_topic',msg:'error_msg'}",
+        "x": 2660,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "1aafdbd0.35d8a4",
+        "type": "switch",
+        "z": "d035534c.e2f29",
+        "g": "49482583.75675c",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 2630,
+        "y": 360,
+        "wires": [
+            [
+                "b7dfb559.475478",
+                "99c15866.623a28"
+            ]
+        ]
+    },
+    {
+        "id": "10ff960.de5286a",
+        "type": "mqtt out",
+        "z": "d035534c.e2f29",
+        "g": "49482583.75675c",
+        "name": "inform admin",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "broker": "6909dfa9.c99ee",
+        "x": 3510,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "b7dfb559.475478",
+        "type": "debug",
+        "z": "d035534c.e2f29",
+        "g": "49482583.75675c",
+        "name": "error saving data",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2830,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "b5ba1a07.1e6068",
+        "type": "mysql",
+        "z": "d035534c.e2f29",
+        "g": "49482583.75675c",
+        "mydb": "e2ee4436.e7fe48",
+        "name": "save notification",
+        "x": 3100,
+        "y": 300,
+        "wires": [
+            [
+                "1e86ea3a.a80206",
+                "6dc9504.2fed1b"
+            ]
+        ]
+    },
+    {
+        "id": "1e86ea3a.a80206",
+        "type": "debug",
+        "z": "d035534c.e2f29",
+        "g": "49482583.75675c",
+        "name": "notification save log",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 3330,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "99c15866.623a28",
+        "type": "function",
+        "z": "d035534c.e2f29",
+        "g": "49482583.75675c",
+        "name": "prepare notification query",
+        "func": "// const sujet = \"db_e_s_histo\";\nconst sujet = msg.data.sujet;\nconst broker_id = 1;\nlet date = new Date(); \ndate = date.toISOString().slice(0, 19).replace('T', ' ');\nmsg.data.date = date;\n// \nmsg.payload = [sujet, date, broker_id, msg.data.user == false ? null : `${msg.old.payload.data[0].bracelet_1}|${msg.old.payload.data[0].bracelet_2}`];\nif(msg.data.user == false)\n    msg.topic = \"INSERT INTO `notification` (`idNotification`, `sujetNotification`, `dateNotification`, `idBroker`, `idPersonnel`) VALUES(NULL, ?, ?, ?, ?);\";\nelse\n    msg.topic = \"INSERT INTO `notification` (`idNotification`, `sujetNotification`, `dateNotification`, `idBroker`, `idPersonnel`) SELECT NULL, ?, ?, ?, `idPersonnel` FROM personnel WHERE macBracelet = ? LIMIT 1;\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 2850,
+        "y": 300,
+        "wires": [
+            [
+                "b5ba1a07.1e6068",
+                "53b33f.9c0fecc"
+            ]
+        ]
+    },
+    {
+        "id": "6dc9504.2fed1b",
+        "type": "function",
+        "z": "d035534c.e2f29",
+        "g": "49482583.75675c",
+        "name": "data format",
+        "func": "msg.topic = `admin/notif`;\nmsg.payload = JSON.stringify({code : msg.data.sujet, user : msg.old.payload.bracelet_mac, date : msg.data.date, broker : msg.broker});\n// \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 3310,
+        "y": 360,
+        "wires": [
+            [
+                "10ff960.de5286a"
+            ]
+        ]
+    },
+    {
+        "id": "53b33f.9c0fecc",
+        "type": "debug",
+        "z": "d035534c.e2f29",
+        "g": "49482583.75675c",
+        "name": "query log",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 3080,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "572a3a86.fe5f54",
+        "type": "switch",
+        "z": "d035534c.e2f29",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 2470,
+        "y": 220,
+        "wires": [
+            [
+                "358cbe4a.a7b2c2"
+            ],
+            [
+                "1aafdbd0.35d8a4"
+            ]
+        ]
+    },
+    {
+        "id": "358cbe4a.a7b2c2",
+        "type": "function",
+        "z": "d035534c.e2f29",
+        "name": "insert into recordpoints",
+        "func": "const raison = `Ne pas maintenir la distance sociale`;\nconst data = msg.old.payload.data[0];\nlet date = new Date(); \ndate = date.toISOString().slice(0, 19).replace('T', ' ');\nconst points = data.distance >= 1 ? data.distance < 1.5 ? -5 : 0 : -15;\n// \nif(points != 0){\n    msg.payload = [raison, date, points, data.bracelet_1, msg.old.payload.broker, raison, date, points, data.bracelet_2, msg.old.payload.broker];\n    msg.topic = \"INSERT INTO `recordPoints` (`idRecordPoints`, `raisonRecordPoints`, `dateRecordPoints`, `nbPoints`, `idBroker`, `idPersonnel`) (SELECT NULL, ?, ?, ?, idBroker, idPersonnel FROM personnel AS p, broker AS b WHERE idPersonnel IN (SELECT idPersonnel FROM personnel WHERE macBracelet = ?) AND idBroker IN (SELECT idBroker FROM broker WHERE macBroker = ?)) UNION ALL (SELECT NULL, ?, ?, ?, idBroker, idPersonnel FROM personnel AS p, broker AS b WHERE idPersonnel IN (SELECT idPersonnel FROM personnel WHERE macBracelet = ?) AND idBroker IN (SELECT idBroker FROM broker WHERE macBroker = ?))\";\n}else msg.payload = false;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 2680,
+        "y": 220,
+        "wires": [
+            [
+                "9ca881a3.c699f",
+                "ee1b0628.a43be8"
+            ]
+        ]
+    },
+    {
+        "id": "9ca881a3.c699f",
+        "type": "switch",
+        "z": "d035534c.e2f29",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "0",
+                "vt": "num"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 2890,
+        "y": 220,
+        "wires": [
+            [
+                "75caf569.dc756c"
+            ],
+            [
+                "f3130158.2e87c"
+            ]
+        ]
+    },
+    {
+        "id": "75caf569.dc756c",
+        "type": "mysql",
+        "z": "d035534c.e2f29",
+        "mydb": "e2ee4436.e7fe48",
+        "name": "",
+        "x": 3060,
+        "y": 220,
+        "wires": [
+            [
+                "40348a55.1d6f64",
+                "cd62075e.25b758"
+            ]
+        ]
+    },
+    {
+        "id": "40348a55.1d6f64",
+        "type": "function",
+        "z": "d035534c.e2f29",
+        "name": "",
+        "func": "msg.data = {};\nmsg.data.sujet = \"db_e_s_recordPoints\";\nmsg.data.user = true;\ntry{\n    if(msg.payload != null && msg.payload != 'null')\n        msg.payload = msg.payload.affectedRows != 0 ? true : false;\n    return msg;\n}catch(err){\n    node.error(err);\n    msg.payload = false;\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 3240,
+        "y": 220,
+        "wires": [
+            [
+                "1aafdbd0.35d8a4",
+                "f3130158.2e87c"
+            ]
+        ]
+    },
+    {
+        "id": "ee1b0628.a43be8",
+        "type": "debug",
+        "z": "d035534c.e2f29",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2940,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "cd62075e.25b758",
+        "type": "debug",
+        "z": "d035534c.e2f29",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 3300,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "d57f92da.d0352",
+        "type": "debug",
+        "z": "d035534c.e2f29",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1540,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "459f0d41.65be14",
+        "type": "function",
+        "z": "28dc4249.5b735e",
+        "name": "Ping bracelet",
+        "func": "const device_channel_id = msg.old.topic.substring(msg.old.topic.lastIndexOf('/') + 1);\nmsg.topic = `bracelet/zone/response/check/${device_channel_id}`;\nmsg.payload = JSON.stringify({code : \"z_na\", mac : msg.old.payload.bracelet_mac});\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 2870,
+        "y": 200,
+        "wires": [
+            [
+                "775850c4.9f20d"
+            ]
+        ]
+    },
+    {
+        "id": "775850c4.9f20d",
+        "type": "mqtt out",
+        "z": "28dc4249.5b735e",
+        "name": "présence non autorisé",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "broker": "6909dfa9.c99ee",
+        "x": 3100,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "49137ac.91e1584",
+        "type": "mqtt in",
+        "z": "d0b40323.697ca",
+        "name": "",
+        "topic": "bracelet/queue/send/#",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "6909dfa9.c99ee",
+        "x": 180,
+        "y": 180,
+        "wires": [
+            [
+                "aa2f8fb6.98ca8"
+            ]
+        ]
+    },
+    {
+        "id": "aa2f8fb6.98ca8",
+        "type": "change",
+        "z": "d0b40323.697ca",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "'",
+                "fromt": "str",
+                "to": "\"",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 440,
+        "y": 180,
+        "wires": [
+            [
+                "4395edeb.165014"
+            ]
+        ]
+    },
+    {
+        "id": "4395edeb.165014",
+        "type": "json",
+        "z": "d0b40323.697ca",
+        "name": "format object",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 670,
+        "y": 180,
+        "wires": [
+            [
+                "c1fb502c.80496"
+            ]
+        ]
+    },
+    {
+        "id": "3bc000a0.9c089",
+        "type": "function",
+        "z": "d0b40323.697ca",
+        "g": "ab84930f.cce9b",
+        "name": "",
+        "func": "let date = new Date(); \ndate = date.toISOString().slice(0, 19).replace('T', ' ');\n// \nmsg.payload = [date, msg.old.payload.bracelet_mac, msg.old.payload.broker_mac];\nmsg.topic = \"INSERT INTO `queue` (`idQueue`, `date_TQueue`, `date_DQueue`, `date_FQueue`, `stateQueue`, `idBroker`, `idPersonnel`) SELECT NULL, ?, NULL, NULL, -1, broker.`idBroker`, personnel.`idPersonnel` FROM personnel, broker WHERE personnel.`idPersonnel` IN (SELECT `idPersonnel` FROM `personnel` WHERE macBracelet = ?) AND broker.`idBroker` IN (SELECT `idBroker` FROM broker WHERE `macBroker` = ?);\";\n// \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1540,
+        "y": 140,
+        "wires": [
+            [
+                "1c25935b.c328bd"
+            ]
+        ]
+    },
+    {
+        "id": "c1fb502c.80496",
+        "type": "function",
+        "z": "d0b40323.697ca",
+        "g": "7c735853.01f5a8",
+        "name": "query",
+        "func": "let msg_clone = msg;\nmsg_clone.old = {\n    payload : msg.payload,\n    topic : msg.topic\n};\n// \nmsg_clone.payload = [msg_clone.old.payload.bracelet_mac, msg_clone.old.payload.broker_mac];\nmsg_clone.topic = \"SELECT `idQueue` FROM `queue` WHERE `idPersonnel` IN (SELECT `idPersonnel` FROM `personnel` WHERE macBracelet = ?) AND `idBroker` IN (SELECT `idBroker` FROM broker WHERE `macBroker` = ?) AND `stateQueue` = -1\";\n// \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 850,
+        "y": 180,
+        "wires": [
+            [
+                "76f2ee36.1baab"
+            ]
+        ]
+    },
+    {
+        "id": "76f2ee36.1baab",
+        "type": "mysql",
+        "z": "d0b40323.697ca",
+        "g": "7c735853.01f5a8",
+        "mydb": "e2ee4436.e7fe48",
+        "name": "",
+        "x": 1020,
+        "y": 180,
+        "wires": [
+            [
+                "7c372248.372f4c"
+            ]
+        ]
+    },
+    {
+        "id": "7c372248.372f4c",
+        "type": "function",
+        "z": "d0b40323.697ca",
+        "g": "7c735853.01f5a8",
+        "name": "",
+        "func": "msg.data = {};\nmsg.data.sujet = \"db_e_f_queue\";\nmsg.data.user = true;\ntry{\n    if(msg.payload != null && msg.payload != 'null')\n        msg.p_next = msg.payload.length > 0 ? true : false;\n    return msg;\n}catch(err){\n    node.error(err);\n    msg.p_next = false;\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1200,
+        "y": 180,
+        "wires": [
+            [
+                "c7198ca0.9b4cc"
+            ]
+        ]
+    },
+    {
+        "id": "c7198ca0.9b4cc",
+        "type": "switch",
+        "z": "d0b40323.697ca",
+        "g": "7c735853.01f5a8",
+        "name": "",
+        "property": "p_next",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "false"
+            },
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1370,
+        "y": 180,
+        "wires": [
+            [
+                "3bc000a0.9c089"
+            ],
+            [
+                "b162dec4.443fd"
+            ]
+        ]
+    },
+    {
+        "id": "b162dec4.443fd",
+        "type": "debug",
+        "z": "d0b40323.697ca",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1550,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "1ca06e20.b6b352",
+        "type": "comment",
+        "z": "d0b40323.697ca",
+        "name": "Already has a ticket",
+        "info": "",
+        "x": 1570,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "1c25935b.c328bd",
+        "type": "mysql",
+        "z": "d0b40323.697ca",
+        "g": "ab84930f.cce9b",
+        "mydb": "e2ee4436.e7fe48",
+        "name": "",
+        "x": 1720,
+        "y": 140,
+        "wires": [
+            [
+                "1c9d5c46.b82fb4"
+            ]
+        ]
+    },
+    {
+        "id": "1c9d5c46.b82fb4",
+        "type": "function",
+        "z": "d0b40323.697ca",
+        "g": "ab84930f.cce9b",
+        "name": "",
+        "func": "msg.data = {};\nmsg.data.sujet = \"db_e_s_queue\";\nmsg.data.user = true;\ntry{\n    if(msg.payload != null && msg.payload != 'null')\n        msg.payload = msg.payload.affectedRows != 0 ? true : false;\n    return msg;\n}catch(err){\n    node.error(err);\n    msg.payload = false;\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1900,
+        "y": 140,
+        "wires": [
+            [
+                "b2cc5f22.d5bdb"
+            ]
+        ]
+    },
+    {
+        "id": "b2cc5f22.d5bdb",
+        "type": "switch",
+        "z": "d0b40323.697ca",
+        "g": "ab84930f.cce9b",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 2070,
+        "y": 140,
+        "wires": [
+            [
+                "af3e7ab1.ce8c58"
+            ],
+            [
+                "1e995c6d.8f65a4"
+            ]
+        ]
+    },
+    {
+        "id": "1e995c6d.8f65a4",
+        "type": "debug",
+        "z": "d0b40323.697ca",
+        "name": "error saving",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2250,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "af3e7ab1.ce8c58",
+        "type": "function",
+        "z": "d0b40323.697ca",
+        "g": "4eda1060.c17ad",
+        "name": "",
+        "func": "msg.contextId = msg.payload.insertId;\n// \nmsg.payload = [msg.old.payload.broker_mac, msg.old.payload.broker_mac];\nmsg.topic = \"SELECT COUNT(q1.`idQueue`) AS q_count FROM `queue` as q1 WHERE q1.`stateQueue` = -1 AND q1.`idBroker` IN (SELECT idBroker FROM broker WHERE macBroker = ?) UNION ALL SELECT COUNT(q2.`idQueue`) AS q_count FROM `queue` as q2 WHERE q2.`stateQueue` = 0 AND q2.`idBroker` IN (SELECT idBroker FROM broker WHERE macBroker = ?)\";\n// \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 2240,
+        "y": 140,
+        "wires": [
+            [
+                "9fa10844.2c42a8"
+            ]
+        ]
+    },
+    {
+        "id": "9fa10844.2c42a8",
+        "type": "mysql",
+        "z": "d0b40323.697ca",
+        "g": "4eda1060.c17ad",
+        "mydb": "e2ee4436.e7fe48",
+        "name": "",
+        "x": 2420,
+        "y": 140,
+        "wires": [
+            [
+                "b26bc42b.ba6068"
+            ]
+        ]
+    },
+    {
+        "id": "b26bc42b.ba6068",
+        "type": "function",
+        "z": "d0b40323.697ca",
+        "g": "4eda1060.c17ad",
+        "name": "",
+        "func": "msg.data = {};\nmsg.data.sujet = \"db_e_f_queue\";\nmsg.data.user = true;\ntry{\n    if(msg.payload != null && msg.payload != 'null')\n        msg.p_next = msg.payload.length > 0 ? true : false;\n    return msg;\n}catch(err){\n    node.error(err);\n    msg.p_next = false;\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 2600,
+        "y": 140,
+        "wires": [
+            [
+                "cbfe425a.d361"
+            ]
+        ]
+    },
+    {
+        "id": "cbfe425a.d361",
+        "type": "switch",
+        "z": "d0b40323.697ca",
+        "g": "4eda1060.c17ad",
+        "name": "",
+        "property": "p_next",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 2770,
+        "y": 140,
+        "wires": [
+            [
+                "70f68dec.179cb4"
+            ],
+            [
+                "fb9481de.652b4"
+            ]
+        ]
+    },
+    {
+        "id": "70f68dec.179cb4",
+        "type": "function",
+        "z": "d0b40323.697ca",
+        "g": "63d3a26e.9c57cc",
+        "name": "",
+        "func": "let msg_clone = {...msg}\nmsg_clone.count = {\n    inline : msg.payload[0].q_count,\n    inside : msg.payload[1].q_count\n}\n// \nif(msg_clone.count.inside >= global.get('queue_in_max'))\n    msg_clone.payload = JSON.stringify({bracelet : msg_clone.old.payload.bracelet_mac, passe : false, ticket : msg_clone.count.inline + 1});\nelse if(msg_clone.count.inside < global.get('queue_in_max'))\n    msg_clone.payload = JSON.stringify({bracelet : msg_clone.old.payload.bracelet_mac, passe : true});\n// \nif(msg_clone.count.inside > global.get('queue_in_max'))\n    msg_clone.payload = null;\n// \nconst device_channel_id = msg.old.topic.substring(msg.old.topic.lastIndexOf('/') + 1);\nmsg_clone.topic = `bracelet/queue/response/send/${device_channel_id}`;\n// \nreturn msg_clone;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 2940,
+        "y": 140,
+        "wires": [
+            [
+                "93c637f.32b50c8"
+            ]
+        ]
+    },
+    {
+        "id": "fb9481de.652b4",
+        "type": "debug",
+        "z": "d0b40323.697ca",
+        "name": "error finding",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2950,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "6b8d7dc2.133ef4",
+        "type": "inject",
+        "z": "d0b40323.697ca",
+        "g": "29a73220.da765e",
+        "name": "set env global variables",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0",
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 230,
+        "y": 60,
+        "wires": [
+            [
+                "e53cf402.91e608"
+            ]
+        ]
+    },
+    {
+        "id": "e53cf402.91e608",
+        "type": "function",
+        "z": "d0b40323.697ca",
+        "g": "29a73220.da765e",
+        "name": "set values",
+        "func": "global.set('queue_in_max',4);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 440,
+        "y": 60,
+        "wires": [
+            [
+                "c2ddfcc1.9162b"
+            ]
+        ]
+    },
+    {
+        "id": "c2ddfcc1.9162b",
+        "type": "debug",
+        "z": "d0b40323.697ca",
+        "g": "29a73220.da765e",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 630,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "93c637f.32b50c8",
+        "type": "switch",
+        "z": "d0b40323.697ca",
+        "g": "63d3a26e.9c57cc",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "nnull"
+            },
+            {
+                "t": "null"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 3110,
+        "y": 140,
+        "wires": [
+            [
+                "63ca509c.76951"
+            ],
+            [
+                "ec169272.bd7cb"
+            ]
+        ]
+    },
+    {
+        "id": "ec169272.bd7cb",
+        "type": "debug",
+        "z": "d0b40323.697ca",
+        "name": "more bracelets in room than max nb allowed",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 3380,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "63ca509c.76951",
+        "type": "mqtt out",
+        "z": "d0b40323.697ca",
+        "g": "63d3a26e.9c57cc",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "broker": "6909dfa9.c99ee",
+        "x": 3270,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "ed8f3a75.4af088",
+        "type": "comment",
+        "z": "d0b40323.697ca",
+        "g": "d9a87a1b.576e38",
+        "name": "error managment",
+        "info": "adopt this model for all wanted error managment\n---\nfor now this wont work\n**solution** => add an object called .error with data {error:'notificaction_topic',msg:'error_msg'}",
+        "x": 2680,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "37c15808.944328",
+        "type": "switch",
+        "z": "d0b40323.697ca",
+        "g": "d9a87a1b.576e38",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 2650,
+        "y": 600,
+        "wires": [
+            [
+                "5db8ac9e.442d04",
+                "d798a323.f5f75"
+            ]
+        ]
+    },
+    {
+        "id": "24a90ffe.a9583",
+        "type": "mqtt out",
+        "z": "d0b40323.697ca",
+        "g": "d9a87a1b.576e38",
+        "name": "inform admin",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "broker": "6909dfa9.c99ee",
+        "x": 3530,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "5db8ac9e.442d04",
+        "type": "debug",
+        "z": "d0b40323.697ca",
+        "g": "d9a87a1b.576e38",
+        "name": "error saving data",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2850,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "895f07e1.13d128",
+        "type": "mysql",
+        "z": "d0b40323.697ca",
+        "g": "d9a87a1b.576e38",
+        "mydb": "e2ee4436.e7fe48",
+        "name": "save notification",
+        "x": 3120,
+        "y": 540,
+        "wires": [
+            [
+                "cf214037.bde0f",
+                "4f9e62ae.ff7d3c"
+            ]
+        ]
+    },
+    {
+        "id": "cf214037.bde0f",
+        "type": "debug",
+        "z": "d0b40323.697ca",
+        "g": "d9a87a1b.576e38",
+        "name": "notification save log",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 3350,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "d798a323.f5f75",
+        "type": "function",
+        "z": "d0b40323.697ca",
+        "g": "d9a87a1b.576e38",
+        "name": "prepare notification query",
+        "func": "// const sujet = \"db_e_s_histo\";\nconst sujet = msg.data.sujet;\nconst broker_id = 1;\nlet date = new Date(); \ndate = date.toISOString().slice(0, 19).replace('T', ' ');\nmsg.data.date = date;\n// \nmsg.payload = [sujet, date, broker_id, msg.data.user == false ? null : msg.old.payload.bracelet_mac];\nif(msg.data.user == false)\n    msg.topic = \"INSERT INTO `notification` (`idNotification`, `sujetNotification`, `dateNotification`, `idBroker`, `idPersonnel`) VALUES(NULL, ?, ?, ?, ?);\";\nelse\n    msg.topic = \"INSERT INTO `notification` (`idNotification`, `sujetNotification`, `dateNotification`, `idBroker`, `idPersonnel`) SELECT NULL, ?, ?, ?, `idPersonnel` FROM personnel WHERE macBracelet = ? LIMIT 1;\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 2870,
+        "y": 540,
+        "wires": [
+            [
+                "895f07e1.13d128",
+                "cd972cab.55ab3"
+            ]
+        ]
+    },
+    {
+        "id": "4f9e62ae.ff7d3c",
+        "type": "function",
+        "z": "d0b40323.697ca",
+        "g": "d9a87a1b.576e38",
+        "name": "data format",
+        "func": "msg.topic = `admin/notif`;\nmsg.payload = JSON.stringify({code : msg.data.sujet, user : msg.old.payload.bracelet_mac, date : msg.data.date, broker : msg.broker});\n// \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 3330,
+        "y": 600,
+        "wires": [
+            [
+                "24a90ffe.a9583"
+            ]
+        ]
+    },
+    {
+        "id": "cd972cab.55ab3",
+        "type": "debug",
+        "z": "d0b40323.697ca",
+        "g": "d9a87a1b.576e38",
+        "name": "query log",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 3100,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "4401b002.10d9e",
+        "type": "function",
+        "z": "b87ff581.195058",
+        "g": "e80cfc64.ed868",
+        "name": "",
+        "func": "msg.payload = [msg.mac];\nmsg.topic = \"SELECT m.`contentMessage` AS msg, (SUM(rp.nbPoints) + p.pointsPersonnel) AS points FROM recordPoints AS rp, personnel AS p, `message` AS m WHERE rp.idPersonnel IN (SELECT `idPersonnel` FROM personnel WHERE macBracelet = ?) AND rp.idPersonnel = p.idPersonnel AND rp.idPersonnel = m.idPersonnel AND YEAR(rp.dateRecordPoints) = YEAR(CURRENT_DATE()) AND MONTH(rp.dateRecordPoints) = MONTH(CURRENT_DATE()) GROUP BY msg, m.`dateMessage` ORDER BY m.`dateMessage` DESC LIMIT 1\";\n// \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1340,
+        "y": 340,
+        "wires": [
+            [
+                "ce168c33.6aee6"
+            ]
+        ]
+    },
+    {
+        "id": "ce168c33.6aee6",
+        "type": "mysql",
+        "z": "b87ff581.195058",
+        "g": "e80cfc64.ed868",
+        "mydb": "e2ee4436.e7fe48",
+        "name": "",
+        "x": 1520,
+        "y": 340,
+        "wires": [
+            [
+                "68c72eda.dd7db"
+            ]
+        ]
+    },
+    {
+        "id": "34c499c2.80f646",
+        "type": "function",
+        "z": "b87ff581.195058",
+        "g": "73c63550.2d040c",
+        "name": "",
+        "func": "let msg_clone = { ...msg };\n// \nmsg_clone.old = {\n    payload : msg.payload,\n    topic : msg.topic\n}\n// \nif(!msg_clone.payload.broker || msg_clone.payload.broker == null || msg_clone.payload.broker == 'null' || !msg_clone.payload.bracelet || msg_clone.payload.bracelet == null || msg_clone.payload.bracelet == 'null'){\n    msg_clone.payload = false;\n} else msg_clone.payload = true;\n// \nreturn msg_clone;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1020,
+        "y": 740,
+        "wires": [
+            [
+                "d572690a.1c23e8",
+                "81e5d1eb.2f629"
+            ]
+        ]
+    },
+    {
+        "id": "411bda98.cce924",
+        "type": "change",
+        "z": "b87ff581.195058",
+        "g": "73c63550.2d040c",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "'",
+                "fromt": "str",
+                "to": "\"",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 600,
+        "y": 740,
+        "wires": [
+            [
+                "33e9709f.053fc"
+            ]
+        ]
+    },
+    {
+        "id": "33e9709f.053fc",
+        "type": "json",
+        "z": "b87ff581.195058",
+        "g": "73c63550.2d040c",
+        "name": "format object",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 830,
+        "y": 740,
+        "wires": [
+            [
+                "34c499c2.80f646"
+            ]
+        ]
+    },
+    {
+        "id": "81e5d1eb.2f629",
+        "type": "debug",
+        "z": "b87ff581.195058",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1190,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "d572690a.1c23e8",
+        "type": "switch",
+        "z": "b87ff581.195058",
+        "g": "73c63550.2d040c",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1190,
+        "y": 740,
+        "wires": [
+            [
+                "658cac46.f27474"
+            ],
+            [
+                "5e1814c3.4c0f2c",
+                "964d3f85.3d5d9"
+            ]
+        ]
+    },
+    {
+        "id": "5e1814c3.4c0f2c",
+        "type": "debug",
+        "z": "b87ff581.195058",
+        "name": "basic data not provided",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1430,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "37df3542.d67b9a",
+        "type": "comment",
+        "z": "b87ff581.195058",
+        "name": "Add feedback",
+        "info": "",
+        "x": 1390,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "9608a9d7.0294e8",
+        "type": "function",
+        "z": "b87ff581.195058",
+        "g": "3a1f45cf.49883a",
+        "name": "",
+        "func": "let ret_array = [];\n// Add historique\nret_array.push({ ...msg });\nret_array[0].payload = [`déconnecté`, msg.old.idPers];\nret_array[0].topic = \"INSERT INTO `historique` (`idHistorique`, `actionHistorique`, `dateHistorique`, `idPersonnel`) VALUES (NULL, ?, NULL, ?)\";\nret_array[0].err_code = \"db_e_s_histo\";\n// Update profile status\nret_array.push({ ...msg });\nret_array[1].payload = [msg.old.idPers];\nret_array[1].topic = \"UPDATE `personnel` SET `onlinePersonnel` = 0 WHERE `idPersonnel` = ?\";\nret_array[1].err_code = \"db_e_u_perso\";\n// Save record\nret_array[2] = { ...msg };\nif(!msg.old.payload.record || msg.old.payload.record == null || msg.old.payload.record == 'null')\n    ret_array[2].payload = null;\nelse{\n    // ret_array.push({ ...msg });\n    // \n    ret_array[2].payload = [];\n    ret_array[2].topic = \"INSERT INTO `record` (`idRecord`, `battementCoeur`, `temperature`, `oxygene`, `dateRecord`, `idBroker`, `idPersonnel`) VALUES \";\n    ret_array[2].err_code = \"db_e_s_recordPoints\";\n    // \n    for(let i = 0; i < msg.old.payload.record.length; i++){\n        const record = msg.old.payload.record[i];\n        //\n        ret_array[2].payload.push(record.data.bc, record.data.temp, record.data.oxy, record.date , msg.old.idBrok, msg.old.idPers)\n        ret_array[2].topic += \"(NULL, ?, ?, ?, ?, ?, ?)\"\n        // \n        if(i < msg.old.payload.record.length - 1)\n            ret_array[2].topic += \", \";\n        else ret_array[2].topic += \";\";\n    }\n}\n// Save convergance\nret_array[3] = { ...msg };\nif(!msg.old.payload.convergence || msg.old.payload.convergence == null || msg.old.payload.convergence == 'null')\n    ret_array[3].payload = null;\nelse{\n    ret_array[3].payload = \"conv\";\n}\n// \nreturn ret_array;",
+        "outputs": 4,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 2080,
+        "y": 700,
+        "wires": [
+            [
+                "beb443f9.97a7b"
+            ],
+            [
+                "beb443f9.97a7b"
+            ],
+            [
+                "beb443f9.97a7b"
+            ],
+            [
+                "4dd472d0.98ba3c"
+            ]
+        ]
+    },
+    {
+        "id": "beb443f9.97a7b",
+        "type": "switch",
+        "z": "b87ff581.195058",
+        "g": "3a1f45cf.49883a",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "nnull"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 2250,
+        "y": 680,
+        "wires": [
+            [
+                "73d87451.2ebebc"
+            ]
+        ]
+    },
+    {
+        "id": "658cac46.f27474",
+        "type": "function",
+        "z": "b87ff581.195058",
+        "g": "a0e9173b.6c3788",
+        "name": "",
+        "func": "msg.payload = [msg.old.payload.bracelet, msg.old.payload.broker];\nmsg.topic = \"SELECT p.idPersonnel, b.idBroker FROM `personnel` AS p, broker AS b WHERE p.macBracelet = ? AND b.macBroker = ?;\"\n// \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1380,
+        "y": 720,
+        "wires": [
+            [
+                "cdc7d07e.09f4"
+            ]
+        ]
+    },
+    {
+        "id": "cdc7d07e.09f4",
+        "type": "mysql",
+        "z": "b87ff581.195058",
+        "g": "a0e9173b.6c3788",
+        "mydb": "e2ee4436.e7fe48",
+        "name": "",
+        "x": 1560,
+        "y": 720,
+        "wires": [
+            [
+                "4565063c.bee238"
+            ]
+        ]
+    },
+    {
+        "id": "4565063c.bee238",
+        "type": "function",
+        "z": "b87ff581.195058",
+        "g": "a0e9173b.6c3788",
+        "name": "",
+        "func": "let msg_clone = { ...msg };\ntry{\n    if(msg.payload != null || msg.payload != 'null'){\n        msg_clone.payload = msg.payload.length == 1 ? true : false;\n        // \n        if(msg_clone.payload){\n            msg_clone.old.idPers = msg.payload[0].idPersonnel;\n            msg_clone.old.idBrok = msg.payload[0].idBroker;\n        }\n    }\n    return msg_clone;\n}catch(err){\n    node.error(err);\n    msg_clone.payload = false;\n    return msg_clone;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1740,
+        "y": 720,
+        "wires": [
+            [
+                "8a9fd261.b8fcb"
+            ]
+        ]
+    },
+    {
+        "id": "8a9fd261.b8fcb",
+        "type": "switch",
+        "z": "b87ff581.195058",
+        "g": "3a1f45cf.49883a",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1910,
+        "y": 720,
+        "wires": [
+            [
+                "9608a9d7.0294e8"
+            ],
+            [
+                "5a5caffa.e81c3",
+                "bb0c59b5.7a6058"
+            ]
+        ]
+    },
+    {
+        "id": "5a5caffa.e81c3",
+        "type": "debug",
+        "z": "b87ff581.195058",
+        "name": "error, bracelet/broker not found",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2150,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "4dd472d0.98ba3c",
+        "type": "switch",
+        "z": "b87ff581.195058",
+        "g": "3a1f45cf.49883a",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "nnull"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 2250,
+        "y": 720,
+        "wires": [
+            [
+                "28921f6b.3189b"
+            ]
+        ]
+    },
+    {
+        "id": "73d87451.2ebebc",
+        "type": "mysql",
+        "z": "b87ff581.195058",
+        "mydb": "e2ee4436.e7fe48",
+        "name": "",
+        "x": 2420,
+        "y": 680,
+        "wires": [
+            [
+                "ac4acf62.58dce"
+            ]
+        ]
+    },
+    {
+        "id": "9027ddab.0a16a",
+        "type": "function",
+        "z": "b87ff581.195058",
+        "name": "",
+        "func": "msg.data = {};\nmsg.data.sujet = \"db_e_s_convergence\";\nmsg.data.user = true;\ntry{\n    if(msg.payload != null && msg.payload != 'null')\n        msg.payload = msg.payload.affectedRows != 0 ? true : false;\n    return msg;\n}catch(err){\n    node.error(err);\n    msg.payload = false;\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 3460,
+        "y": 720,
+        "wires": [
+            [
+                "8dc7e19f.2117e"
+            ]
+        ]
+    },
+    {
+        "id": "8dc7e19f.2117e",
+        "type": "switch",
+        "z": "b87ff581.195058",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 3630,
+        "y": 720,
+        "wires": [
+            [
+                "cd16c7a2.20d3b8"
+            ],
+            [
+                "4d1b74ef.57f57c"
+            ]
+        ]
+    },
+    {
+        "id": "cd16c7a2.20d3b8",
+        "type": "function",
+        "z": "b87ff581.195058",
+        "name": "insert into recordpoints",
+        "func": "const raison = `Ne pas maintenir la distance sociale`;\nconst data = msg.old.payload.convergence[0];\nlet date = new Date(); \ndate = date.toISOString().slice(0, 19).replace('T', ' ');\nconst points = data.distance >= 1 ? data.distance < 1.5 ? -5 : 0 : -15;\n// \nif(points != 0){\n    msg.payload = [raison, date, points, data.bracelet_1, msg.old.payload.broker, raison, date, points, data.bracelet_2, msg.old.payload.broker];\n    msg.topic = \"INSERT INTO `recordPoints` (`idRecordPoints`, `raisonRecordPoints`, `dateRecordPoints`, `nbPoints`, `idBroker`, `idPersonnel`) (SELECT NULL, ?, ?, ?, idBroker, idPersonnel FROM personnel AS p, broker AS b WHERE idPersonnel IN (SELECT idPersonnel FROM personnel WHERE macBracelet = ?) AND idBroker IN (SELECT idBroker FROM broker WHERE macBroker = ?)) UNION ALL (SELECT NULL, ?, ?, ?, idBroker, idPersonnel FROM personnel AS p, broker AS b WHERE idPersonnel IN (SELECT idPersonnel FROM personnel WHERE macBracelet = ?) AND idBroker IN (SELECT idBroker FROM broker WHERE macBroker = ?))\";\n}else msg.payload = false;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 3840,
+        "y": 720,
+        "wires": [
+            [
+                "c80add11.efac",
+                "c88f8227.f966b"
+            ]
+        ]
+    },
+    {
+        "id": "c80add11.efac",
+        "type": "switch",
+        "z": "b87ff581.195058",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "0",
+                "vt": "num"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 4050,
+        "y": 720,
+        "wires": [
+            [
+                "41716e89.997b9"
+            ],
+            [
+                "a77c8c26.1c93b"
+            ]
+        ]
+    },
+    {
+        "id": "41716e89.997b9",
+        "type": "mysql",
+        "z": "b87ff581.195058",
+        "mydb": "e2ee4436.e7fe48",
+        "name": "",
+        "x": 4220,
+        "y": 720,
+        "wires": [
+            [
+                "9a1e7a27.30fba8",
+                "b04e49c6.0ee328"
+            ]
+        ]
+    },
+    {
+        "id": "9a1e7a27.30fba8",
+        "type": "function",
+        "z": "b87ff581.195058",
+        "name": "",
+        "func": "msg.data = {};\nmsg.data.sujet = \"db_e_s_recordPoints\";\nmsg.data.user = true;\ntry{\n    if(msg.payload != null && msg.payload != 'null')\n        msg.payload = msg.payload.affectedRows != 0 ? true : false;\n    return msg;\n}catch(err){\n    node.error(err);\n    msg.payload = false;\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 4400,
+        "y": 720,
+        "wires": [
+            [
+                "a77c8c26.1c93b",
+                "4d1b74ef.57f57c"
+            ]
+        ]
+    },
+    {
+        "id": "c88f8227.f966b",
+        "type": "debug",
+        "z": "b87ff581.195058",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 4070,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "b04e49c6.0ee328",
+        "type": "debug",
+        "z": "b87ff581.195058",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 4410,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "a318550a.fa5bc8",
+        "type": "function",
+        "z": "b87ff581.195058",
+        "name": "prepare insert query",
+        "func": "const data = msg.old.payload.convergence[0];\n// \nmsg.payload = [data.date, data.distance, msg.old.payload.broker, data.bracelet_1, data.bracelet_2];\nmsg.topic = \"INSERT INTO convergence (`idConvergence`, `dateConvergence`, `distanceConvergence`, `idBroker`, `idPersonnel`, `idPersonnel_2`) SELECT NULL, ?, ?, br.idBroker, pr1.idPersonnel, pr2.idPersonnel FROM broker AS br, personnel AS pr1, personnel AS pr2 WHERE br.idBroker IN (SELECT idBroker FROM broker WHERE macBroker = ?) AND pr1.idPersonnel IN (SELECT idPersonnel FROM personnel WHERE macBracelet = ?) AND pr2.idPersonnel IN (SELECT idPersonnel FROM personnel WHERE macBracelet = ?)\";\n// \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 3060,
+        "y": 720,
+        "wires": [
+            [
+                "3ea7095b.4246a6"
+            ]
+        ]
+    },
+    {
+        "id": "3ea7095b.4246a6",
+        "type": "mysql",
+        "z": "b87ff581.195058",
+        "mydb": "e2ee4436.e7fe48",
+        "name": "",
+        "x": 3280,
+        "y": 720,
+        "wires": [
+            [
+                "9027ddab.0a16a"
+            ]
+        ]
+    },
+    {
+        "id": "28921f6b.3189b",
+        "type": "function",
+        "z": "b87ff581.195058",
+        "name": "search for duplicates",
+        "func": "const data = msg.old.payload.convergence[0];\nconst delay_interval = 5;\n// \nmsg.payload = [data.bracelet_1, data.bracelet_2, data.bracelet_1, data.bracelet_2, data.date, delay_interval, delay_interval, data.distance];\nmsg.topic = \"SELECT COUNT(*) as `exist` FROM `convergence` WHERE `idPersonnel` IN (SELECT `idPersonnel` FROM personnel WHERE macBracelet = ? OR `idPersonnel` IN (SELECT `idPersonnel` FROM personnel WHERE macBracelet = ?)) AND `idPersonnel_2` IN (SELECT `idPersonnel` FROM personnel WHERE macBracelet = ? OR `idPersonnel_2` IN (SELECT `idPersonnel` FROM personnel WHERE macBracelet = ?)) AND TIMESTAMPDIFF(SECOND, `dateConvergence`, ?) BETWEEN -? AND ? AND CAST(`distanceConvergence` AS CHAR) = ?\"\n// \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 2460,
+        "y": 720,
+        "wires": [
+            [
+                "e5062de6.815b5"
+            ]
+        ]
+    },
+    {
+        "id": "e5062de6.815b5",
+        "type": "mysql",
+        "z": "b87ff581.195058",
+        "mydb": "e2ee4436.e7fe48",
+        "name": "",
+        "x": 2680,
+        "y": 720,
+        "wires": [
+            [
+                "5098f33a.c8b58c"
+            ]
+        ]
+    },
+    {
+        "id": "5098f33a.c8b58c",
+        "type": "switch",
+        "z": "b87ff581.195058",
+        "name": "",
+        "property": "payload[0].exist",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            },
+            {
+                "t": "gt",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 2850,
+        "y": 720,
+        "wires": [
+            [
+                "a318550a.fa5bc8"
+            ],
+            [
+                "a77c8c26.1c93b"
+            ]
+        ]
+    },
+    {
+        "id": "a77c8c26.1c93b",
+        "type": "function",
+        "z": "b87ff581.195058",
+        "name": "",
+        "func": "if(msg.old.payload.convergence.length > 1){\n    msg.old.payload.convergence.shift();\n    msg.payload = true;\n}else msg.payload = false;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 2420,
+        "y": 760,
+        "wires": [
+            [
+                "64734b27.ca2c74"
+            ]
+        ]
+    },
+    {
+        "id": "64734b27.ca2c74",
+        "type": "switch",
+        "z": "b87ff581.195058",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 2590,
+        "y": 760,
+        "wires": [
+            [
+                "28921f6b.3189b"
+            ],
+            [
+                "1acd0ba6.361004"
+            ]
+        ]
+    },
+    {
+        "id": "ca6f98e0.c8c7d8",
+        "type": "debug",
+        "z": "b87ff581.195058",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2050,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "ac4acf62.58dce",
+        "type": "function",
+        "z": "b87ff581.195058",
+        "name": "insertion valdiation",
+        "func": "msg.data = {};\nmsg.data.sujet = msg.err_code;\n// \ntry{\n    if(msg.payload != null && msg.payload != 'null')\n        msg.payload = msg.payload.affectedRows != 0 ? true : false;\n    return msg;\n}catch(err){\n    node.error(err);\n    msg.payload = false;\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 2630,
+        "y": 680,
+        "wires": [
+            [
+                "4d1b74ef.57f57c"
+            ]
+        ]
+    },
+    {
+        "id": "43869e02.98c39",
+        "type": "mqtt out",
+        "z": "b87ff581.195058",
+        "g": "ae59be11.61eb5",
+        "name": "bracelet feedback",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "broker": "6909dfa9.c99ee",
+        "x": 4750,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "8be39f39.df00f",
+        "type": "function",
+        "z": "b87ff581.195058",
+        "g": "ae59be11.61eb5",
+        "name": "gen topic",
+        "func": "let msg_clone = { ...msg };\nconst device_channel_id = msg.old.topic.substring(msg.old.topic.lastIndexOf('/') + 1);\nmsg_clone.topic = `bracelet/auth/response/disconnect/${device_channel_id}`;\n//\nreturn msg_clone;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 4540,
+        "y": 860,
+        "wires": [
+            [
+                "43869e02.98c39"
+            ]
+        ]
+    },
+    {
+        "id": "1acd0ba6.361004",
+        "type": "function",
+        "z": "b87ff581.195058",
+        "g": "82109846.41b788",
+        "name": "",
+        "func": "msg.payload = [msg.old.idPers, msg.old.idPers];\nmsg.topic = \"SELECT IFNULL(SUM(rp.nbPoints), 0) AS r_points, NULL AS points FROM recordPoints AS rp WHERE rp.idPersonnel = ? AND YEAR(rp.dateRecordPoints) = YEAR(CURRENT_DATE()) AND MONTH(rp.dateRecordPoints) = MONTH(CURRENT_DATE()) AND DAY(rp.dateRecordPoints) = DAY(CURRENT_DATE()) UNION ALL SELECT IFNULL(SUM(rp2.nbPoints), 0), IFNULL((SUM(rp2.nbPoints) + p.pointsPersonnel), p.pointsPersonnel) FROM recordPoints AS rp2, personnel AS p WHERE rp2.idPersonnel = ? AND rp2.idPersonnel = p.idPersonnel AND YEAR(rp2.dateRecordPoints) = YEAR(CURRENT_DATE()) AND MONTH(rp2.dateRecordPoints) = MONTH(CURRENT_DATE())\";\n// \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 2780,
+        "y": 800,
+        "wires": [
+            [
+                "f2e122c7.ad1c7"
+            ]
+        ]
+    },
+    {
+        "id": "f2e122c7.ad1c7",
+        "type": "mysql",
+        "z": "b87ff581.195058",
+        "g": "82109846.41b788",
+        "mydb": "e2ee4436.e7fe48",
+        "name": "",
+        "x": 2960,
+        "y": 800,
+        "wires": [
+            [
+                "99486d23.66526"
+            ]
+        ]
+    },
+    {
+        "id": "99486d23.66526",
+        "type": "function",
+        "z": "b87ff581.195058",
+        "g": "82109846.41b788",
+        "name": "",
+        "func": "let msg_clone = { ...msg };\nmsg_clone.data.sujet = \"db_e_f_recordPoints\";\n// \ntry{\n    if(msg.payload != null && msg.payload != 'null')\n        msg_clone.p_next = msg.payload.length == 2 ? true : false;\n    return msg_clone;\n}catch(err){\n    node.error(err);\n    msg_clone.p_next = false;\n    return msg_clone;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 3140,
+        "y": 800,
+        "wires": [
+            [
+                "24ce983e.9d7c58",
+                "e5961dad.af424"
+            ]
+        ]
+    },
+    {
+        "id": "24ce983e.9d7c58",
+        "type": "switch",
+        "z": "b87ff581.195058",
+        "name": "",
+        "property": "p_next",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "false"
+            },
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 3290,
+        "y": 800,
+        "wires": [
+            [
+                "4d1b74ef.57f57c"
+            ],
+            [
+                "4f7379a1.cbe068"
+            ]
+        ]
+    },
+    {
+        "id": "4f7379a1.cbe068",
+        "type": "function",
+        "z": "b87ff581.195058",
+        "name": "",
+        "func": "let msg_clone = { ...msg };\nlet messages = {positive : ['good_1','good_2','good_3'], negative : ['bad_1','bad_2']};\n// \nconst random = (max) => {\n    return Math.floor(Math.random() * (max + 1));\n}\n// \nlet ret_data = { points: msg.payload[1].points, msg : messages.positive[random(messages.positive.length - 1)]};\n// msg.payload[0].r_points => points removed today\n// msg.payload[1].r_points => points removed this month\n// msg.payload[0].points => null\n// msg.payload[1].points => total points for this month with reductions\nif(msg.payload[0].r_points < 0)\n    ret_data.msg = messages.negative[random(messages.negative.length - 1)];\n// \nmsg_clone.old.response = ret_data;\nreturn msg_clone;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 3460,
+        "y": 800,
+        "wires": [
+            [
+                "90740714.ea4eb8"
+            ]
+        ]
+    },
+    {
+        "id": "90740714.ea4eb8",
+        "type": "function",
+        "z": "b87ff581.195058",
+        "g": "36981669.b5d48a",
+        "name": "",
+        "func": "msg.payload = [msg.old.idPers];\nmsg.topic = \"SELECT Y.*, COUNT(p2.idPersonnel) AS nbPerso FROM ( SELECT x.*, ( @rownum := @rownum + 1 ) AS rank FROM ( SELECT DISTINCT p.idPersonnel, SUM(rp.nbPoints), IFNULL((SUM(rp.nbPoints) + p.pointsPersonnel), p.pointsPersonnel) AS score FROM recordPoints AS rp, personnel AS p, (SELECT @rownum :=0)r WHERE YEAR(rp.dateRecordPoints) = YEAR(CURRENT_DATE()) AND MONTH(rp.dateRecordPoints) = MONTH(CURRENT_DATE()) AND rp.idPersonnel = p.idPersonnel GROUP BY p.idPersonnel ORDER BY score DESC ) AS x ) AS Y, personnel AS p2 WHERE Y.idPersonnel = ? GROUP BY Y.rank\"\n// \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 3640,
+        "y": 820,
+        "wires": [
+            [
+                "84f1db7a.f893d8",
+                "2f9c4864.8eedf8"
+            ]
+        ]
+    },
+    {
+        "id": "84f1db7a.f893d8",
+        "type": "mysql",
+        "z": "b87ff581.195058",
+        "g": "36981669.b5d48a",
+        "mydb": "e2ee4436.e7fe48",
+        "name": "",
+        "x": 3820,
+        "y": 820,
+        "wires": [
+            [
+                "3d7756bc.fa57ca"
+            ]
+        ]
+    },
+    {
+        "id": "3d7756bc.fa57ca",
+        "type": "function",
+        "z": "b87ff581.195058",
+        "g": "36981669.b5d48a",
+        "name": "",
+        "func": "let msg_clone = { ...msg };\nmsg_clone.data.sujet = \"db_e_f_rank\";\n// \ntry{\n    if(msg.payload != null && msg.payload != 'null')\n        msg_clone.p_next = msg.payload.length == 1 ? true : false;\n    return msg_clone;\n}catch(err){\n    node.error(err);\n    msg_clone.p_next = false;\n    return msg_clone;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 4000,
+        "y": 820,
+        "wires": [
+            [
+                "88aaec6e.f64f8",
+                "2f9c4864.8eedf8"
+            ]
+        ]
+    },
+    {
+        "id": "88aaec6e.f64f8",
+        "type": "switch",
+        "z": "b87ff581.195058",
+        "name": "",
+        "property": "p_next",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 4170,
+        "y": 820,
+        "wires": [
+            [
+                "e6bdf1e2.c0c8c"
+            ],
+            [
+                "93af8944.21e8b8"
+            ]
+        ]
+    },
+    {
+        "id": "e6bdf1e2.c0c8c",
+        "type": "function",
+        "z": "b87ff581.195058",
+        "g": "ae59be11.61eb5",
+        "name": "",
+        "func": "let msg_clone = { ...msg };\n//\nmsg_clone.old.response.rank = `${msg.payload[0].rank}/${msg.payload[0].nbPerso}`;\nmsg_clone.ret = {status : 'success', data : msg_clone.old.response}\nmsg_clone.payload = msg_clone.ret;\n// \nreturn msg_clone;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 4360,
+        "y": 860,
+        "wires": [
+            [
+                "8be39f39.df00f"
+            ]
+        ]
+    },
+    {
+        "id": "2f9c4864.8eedf8",
+        "type": "debug",
+        "z": "b87ff581.195058",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 4170,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "e5961dad.af424",
+        "type": "debug",
+        "z": "b87ff581.195058",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 3310,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "93af8944.21e8b8",
+        "type": "function",
+        "z": "b87ff581.195058",
+        "name": "i",
+        "func": "msg.payload = false;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1910,
+        "y": 420,
+        "wires": [
+            [
+                "4d1b74ef.57f57c"
+            ]
+        ]
+    },
+    {
+        "id": "964d3f85.3d5d9",
+        "type": "function",
+        "z": "b87ff581.195058",
+        "name": "",
+        "func": "let msg_clone = { ...msg };\nmsg_clone.data.sujet = 'e_format_data';\n//\nmsg_clone.ret = {status : 'fail', data : msg_clone.data.sujet}\nmsg_clone.payload = false;\n// \nreturn msg_clone;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1380,
+        "y": 840,
+        "wires": [
+            [
+                "ffedbe26.bf344",
+                "4d1b74ef.57f57c"
+            ]
+        ]
+    },
+    {
+        "id": "ef07d0ca.f579c",
+        "type": "mqtt out",
+        "z": "b87ff581.195058",
+        "name": "bracelet feedback",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "broker": "6909dfa9.c99ee",
+        "x": 1770,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "ffedbe26.bf344",
+        "type": "function",
+        "z": "b87ff581.195058",
+        "name": "gen topic",
+        "func": "let msg_clone = { ...msg };\nconst device_channel_id = msg.old.topic.substring(msg.old.topic.lastIndexOf('/') + 1);\nmsg_clone.topic = `bracelet/auth/response/disconnect/${device_channel_id}`;\nmsg_clone.payload = msg_clone.ret;\n//\nreturn msg_clone;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1560,
+        "y": 840,
+        "wires": [
+            [
+                "ef07d0ca.f579c"
+            ]
+        ]
+    },
+    {
+        "id": "bb0c59b5.7a6058",
+        "type": "function",
+        "z": "b87ff581.195058",
+        "name": "",
+        "func": "let msg_clone = { ...msg };\nmsg_clone.data.sujet = 'e_BB_nf';\n//\nmsg_clone.ret = {status : 'fail', data : msg_clone.data.sujet}\nmsg_clone.payload = false;\n// \nreturn msg_clone;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 2080,
+        "y": 800,
+        "wires": [
+            [
+                "ffedbe26.bf344",
+                "4d1b74ef.57f57c"
+            ]
+        ]
+    },
+    {
+        "id": "f9b83484.3ca2a8",
+        "type": "function",
+        "z": "6d9ee958.5bf188",
+        "g": "ad3d1e26.6c0de",
+        "name": "",
+        "func": "msg.payload = [msg.old.payload.mac];\nmsg.topic = \"SELECT idPersonnel FROM `personnel` WHERE macBracelet = ?\"\n// \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1740,
+        "y": 160,
+        "wires": [
+            [
+                "96bb1f72.7002a"
+            ]
+        ]
+    },
+    {
+        "id": "96bb1f72.7002a",
+        "type": "mysql",
+        "z": "6d9ee958.5bf188",
+        "g": "ad3d1e26.6c0de",
+        "mydb": "e2ee4436.e7fe48",
+        "name": "",
+        "x": 1920,
+        "y": 160,
+        "wires": [
+            [
+                "382058af.0e6998"
+            ]
+        ]
+    },
+    {
+        "id": "382058af.0e6998",
+        "type": "function",
+        "z": "6d9ee958.5bf188",
+        "g": "ad3d1e26.6c0de",
+        "name": "",
+        "func": "let msg_clone = { ...msg };\ntry{\n    if(msg.payload != null || msg.payload != 'null'){\n        msg_clone.payload = msg.payload.length == 1 ? true : false;\n        // \n        if(msg_clone.payload)\n            msg_clone.old.idPers = msg.payload[0].idPersonnel;\n    }\n    return msg_clone;\n}catch(err){\n    node.error(err);\n    msg_clone.payload = false;\n    return msg_clone;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 2100,
+        "y": 160,
+        "wires": [
+            [
+                "bb623f86.d3bee"
+            ]
+        ]
+    },
+    {
+        "id": "bb623f86.d3bee",
+        "type": "switch",
+        "z": "6d9ee958.5bf188",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 2270,
+        "y": 160,
+        "wires": [
+            [
+                "d37c098e.7e39d8"
+            ],
+            [
+                "448175aa.a1798c"
+            ]
+        ]
+    },
+    {
+        "id": "448175aa.a1798c",
+        "type": "function",
+        "z": "6d9ee958.5bf188",
+        "name": "",
+        "func": "let msg_clone = { ...msg };\nmsg_clone.data.sujet = 'e_BB_nf';\n//\nmsg_clone.ret = {status : 'fail', data : msg_clone.data.sujet}\nmsg_clone.payload = false;\n// \nreturn msg_clone;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 2440,
+        "y": 180,
+        "wires": [
+            [
+                "8172d8ac.8314e8"
+            ]
+        ]
+    }
+]
