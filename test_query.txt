@@ -1,1 +1,46 @@
 SELECT COUNT(qr1.`idPersonnel`) AS `status`, qr2.e_status FROM queueRoom AS qr1, (SELECT idPersonnel, COUNT(`idQueueRoom`) AS e_status FROM queueRoom WHERE `idPersonnel` IN (SELECT `idPersonnel` FROM `personnel` WHERE macBracelet = '17-DE-36-70-58-A9') AND TIMESTAMPDIFF(SECOND, dateQueueRoom, '2020-10-25 00:00:07') <= 999) AS qr2 WHERE qr1.`idPersonnel` IN (SELECT `idPersonnel` FROM `personnel` WHERE macBracelet = '17-DE-36-70-58-A9') AND TIMESTAMPDIFF(SECOND, qr1.dateQueueRoom, '2020-10-25 00:00:07') <= 999 AND qr1.`idBroker` NOT IN (SELECT `idBroker` FROM broker WHERE `macBroker` = 'FF-CC-67-DE-1E-A0') AND qr2.`idPersonnel` = qr1.`idPersonnel`
+
+SELECT COUNT(qr1.`idPersonnel`) AS `status`, qr2.e_status 
+FROM queueRoom AS qr1, (SELECT idPersonnel, COUNT(`idQueueRoom`) AS e_status FROM queueRoom WHERE `idPersonnel` IN (SELECT `idPersonnel` FROM `personnel` WHERE macBracelet = '17-DE-36-70-58-A9') AND TIMESTAMPDIFF(SECOND, dateQueueRoom, '2020-10-26 13:04:37') <= 999) AS qr2 
+WHERE qr1.`idPersonnel` IN (SELECT `idPersonnel` FROM `personnel` WHERE macBracelet = '17-DE-36-70-58-A9') 
+AND TIMESTAMPDIFF(SECOND, qr1.dateQueueRoom, '2020-10-26 13:04:37') <= 999 
+AND qr1.`idBroker` NOT IN (SELECT `idBroker` FROM broker WHERE `macBroker` = 'FF-CC-67-DE-1E-A0') 
+AND qr2.`idPersonnel` = qr1.`idPersonnel`
+
+SELECT COUNT(qr1.`idPersonnel`) AS `status`
+FROM queueRoom AS qr1 
+WHERE qr1.`idPersonnel` IN (SELECT `idPersonnel` FROM `personnel` WHERE macBracelet = '17-DE-36-70-58-A9') 
+AND TIMESTAMPDIFF(SECOND, qr1.dateQueueRoom, '2020-10-26 13:04:37') <= 5 
+AND qr1.`idBroker` NOT IN (SELECT `idBroker` FROM broker WHERE `macBroker` = 'FF-CC-67-DE-1E-A0')
+UNION ALL
+SELECT (COUNT(`idQueueRoom`) - 1) AS e_status FROM queueRoom WHERE `idPersonnel` IN (SELECT `idPersonnel` FROM `personnel` WHERE macBracelet = '17-DE-36-70-58-A9') AND TIMESTAMPDIFF(SECOND, dateQueueRoom, '2020-10-26 13:04:37') <= (5 - 1)
+
+------- MAGIC LINE : if = 0/1 => FIRST TIME | = 2 => already went in at some point
+
+SELECT COUNT(occ.occurrences) AS occurrences FROM ( SELECT COUNT(`idPersonnel`) AS occurrences FROM queueRoom WHERE `idPersonnel` IN (SELECT `idPersonnel` FROM `personnel` WHERE macBracelet = '17-DE-36-70-58-A9') AND TIMESTAMPDIFF(SECOND, dateQueueRoom, '2020-10-26 13:04:37') <= 5 GROUP BY `idBroker` ) AS occ
+
+
+SELECT COUNT(qr1.`idPersonnel`) AS `status`, COUNT(occ.occurrences) AS occurrences
+FROM queueRoom AS qr1, (SELECT COUNT(`idPersonnel`) AS occurrences FROM queueRoom WHERE `idPersonnel` IN (SELECT `idPersonnel` FROM `personnel` WHERE macBracelet = '17-DE-36-70-58-A9') AND TIMESTAMPDIFF(SECOND, dateQueueRoom, '2020-10-26 13:04:37') <= 5 GROUP BY `idBroker`) AS occ
+WHERE qr1.`idPersonnel` IN (SELECT `idPersonnel` FROM `personnel` WHERE macBracelet = '17-DE-36-70-58-A9') 
+AND TIMESTAMPDIFF(SECOND, qr1.dateQueueRoom, '2020-10-26 13:04:37') <= 5 
+AND qr1.`idBroker` NOT IN (SELECT `idBroker` FROM broker WHERE `macBroker` = 'FF-CC-67-DE-1E-A0')
+
+LAST =>
+SELECT COUNT(qr1.`idPersonnel`) AS `status`, NULL AS occurrences
+FROM queueRoom AS qr1
+WHERE qr1.`idPersonnel` IN (SELECT `idPersonnel` FROM `personnel` WHERE macBracelet = '17-DE-36-70-58-A9') 
+AND TIMESTAMPDIFF(SECOND, qr1.dateQueueRoom, '2020-10-26 13:04:37') <= 5 
+AND qr1.`idBroker` NOT IN (SELECT `idBroker` FROM broker WHERE `macBroker` = 'FF-CC-67-DE-1E-A0')
+UNION ALL
+SELECT NULL, COUNT(occ.occurrences) AS occurrences FROM ( SELECT COUNT(`idPersonnel`) AS occurrences FROM queueRoom WHERE `idPersonnel` IN (SELECT `idPersonnel` FROM `personnel` WHERE macBracelet = '17-DE-36-70-58-A9') AND TIMESTAMPDIFF(SECOND, dateQueueRoom, '2020-10-26 13:04:37') <= 5 GROUP BY `idBroker` ) AS occ
+
+OLD =>
+SELECT COUNT(qr1.`idPersonnel`) AS `status` FROM queueRoom AS qr1 WHERE qr1.`idPersonnel` IN (SELECT `idPersonnel` FROM `personnel` WHERE macBracelet = ?) AND TIMESTAMPDIFF(SECOND, qr1.dateQueueRoom, ?) <= ? AND qr1.`idBroker` NOT IN (SELECT `idBroker` FROM broker WHERE `macBroker` = ?)
+
+-------------------------------------
+ticket validation
+-------------------------------------
+(SELECT COUNT(idQueue) AS inSide FROM queue WHERE stateQueue = 0 AND idBroker = 6)
+(SELECT (COUNT(`idQueue`) + 1) AS nb_ticket FROM queue WHERE `idQueue` < (SELECT `idQueue` FROM queue WHERE `stateQueue` = -1 AND idBroker = 6 AND idPersonnel = 2 ORDER BY `date_TQueue` DESC LIMIT 1))
+(SELECT COUNT(`idQueue`) AS nb_beforeMe FROM queue WHERE `idQueue` < (SELECT `idQueue` FROM queue WHERE `stateQueue` = -1 AND idBroker = 6 AND idPersonnel = 2 ORDER BY `date_TQueue` DESC LIMIT 1) AND `stateQueue` = -1)
