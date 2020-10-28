@@ -42,4 +42,40 @@ WHERE Y.idPersonnel = 1
 
 BETTER QUERY 
 
+SELECT Y.*, COUNT(p2.idPersonnel) AS nbPerso 
+FROM ( 
+    SELECT x.*, ( @rownum := @rownum + 1 ) AS rank 
+    FROM ( 
+        SELECT DISTINCT p.idPersonnel, SUM(rp.nbPoints), IFNULL((SUM(rp.nbPoints) + p.pointsPersonnel), p.pointsPersonnel) AS score 
+        FROM recordPoints AS rp, personnel AS p, (SELECT @rownum :=0)r 
+        WHERE YEAR(rp.dateRecordPoints) = YEAR(CURRENT_DATE()) AND MONTH(rp.dateRecordPoints) = MONTH(CURRENT_DATE())
+        AND rp.idPersonnel = p.idPersonnel 
+        GROUP BY p.idPersonnel 
+        ORDER BY score DESC ) AS x 
+) AS Y, personnel AS p2 
+WHERE Y.idPersonnel = 2 
+GROUP BY Y.rank
+
 SELECT Y.*, COUNT(p2.idPersonnel) AS nbPerso FROM ( SELECT x.*, ( @rownum := @rownum + 1 ) AS rank FROM ( SELECT DISTINCT p.idPersonnel, SUM(rp.nbPoints), IFNULL((SUM(rp.nbPoints) + p.pointsPersonnel), p.pointsPersonnel) AS score FROM recordPoints AS rp, personnel AS p, (SELECT @rownum :=0)r WHERE YEAR(rp.dateRecordPoints) = YEAR(CURRENT_DATE()) AND MONTH(rp.dateRecordPoints) = MONTH(CURRENT_DATE()) AND rp.idPersonnel = p.idPersonnel GROUP BY p.idPersonnel ORDER BY score DESC ) AS x ) AS Y, personnel AS p2 WHERE Y.idPersonnel = 2 GROUP BY Y.rank
+
+ULTRA GOOD RANKIN QUERY
+
+SELECT Y.*, COUNT(p2.idPersonnel) AS nbPerso 
+FROM ( 
+    SELECT x.*, ( @rownum := @rownum + 1 ) AS rank 
+    FROM ( 
+        SELECT DISTINCT p.idPersonnel AS idp, ( 
+            SELECT IFNULL((SUM(rp.nbPoints) + p.pointsPersonnel), p.pointsPersonnel) AS score 
+            FROM recordPoints AS rp, (SELECT @rownum :=0)r 
+            WHERE YEAR(rp.dateRecordPoints) = YEAR(CURRENT_DATE()) 
+            AND MONTH(rp.dateRecordPoints) = MONTH(CURRENT_DATE())
+            AND rp.idPersonnel = p.idPersonnel 
+        ) AS score
+        FROM personnel AS p
+        GROUP BY p.idPersonnel 
+        ORDER BY score DESC ) AS x 
+) AS Y, personnel AS p2 
+WHERE idp = 3
+GROUP BY Y.rank
+
+SELECT Y.*, COUNT(p2.idPersonnel) AS nbPerso FROM ( SELECT x.*, ( @rownum := @rownum + 1 ) AS rank FROM ( SELECT DISTINCT p.idPersonnel AS idp, ( SELECT IFNULL((SUM(rp.nbPoints) + p.pointsPersonnel), p.pointsPersonnel) AS score FROM recordPoints AS rp, (SELECT @rownum :=0)r WHERE YEAR(rp.dateRecordPoints) = YEAR(CURRENT_DATE()) AND MONTH(rp.dateRecordPoints) = MONTH(CURRENT_DATE()) AND rp.idPersonnel = p.idPersonnel ) AS score FROM personnel AS p GROUP BY p.idPersonnel ORDER BY score DESC ) AS x ) AS Y, personnel AS p2 WHERE idp = 3 GROUP BY Y.rank
