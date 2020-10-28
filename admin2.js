@@ -165,9 +165,13 @@ function randomId(source) {
 // [{ data: { bc: '60', oxy: '20', temp: '35.5' }, date: '2020-12-12 04:23' }]
 // "{'records':[{'data':{'bc':'60','oxy':'20','temp':'35.5'},'date':'2020-12-12 04:23'}, {'data':{'bc':'60','oxy':'20','temp':'35.5'},'date':'2020-12-12 04:23'}],'mac':'6E-0E-95-27-13-3E'}"
 // "{'records':[{'data':{'bc':'','oxy':'','temp':''},'date':''}],'mac':''}"
+// "{'records':[{'data':{'bc':'','oxy':'','temp':''},'date':''}],'bracelet':'', 'broker':''}"
 // 
 // "{'bracelet_mac' : '', 'broker_mac' : ''}"
-// "{'bracelet_mac' : '6E-0E-95-27-13-3E', 'broker_mac' : '0B-88-A4-66-0E-A0'}"
+
+// "{'bracelet' : '6E-0E-95-27-13-3E', 'broker' : '0B-88-A4-66-0E-A0'}"
+
+// "{'bracelet' : '6E-0E-95-27-13-3E', 'broker' : '0B-88-A4-66-0E-A0'}"
 // 
 // 
 // ERROR FORMAT =>{"code":"br_na_brace","user":"6E-0E-95-27-13-3","date":"2020-10-13 17:14:05","broker":"10"}
