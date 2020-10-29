@@ -166,6 +166,7 @@ function randomId(source) {
 // "{'records':[{'data':{'bc':'60','oxy':'20','temp':'35.5'},'date':'2020-12-12 04:23'}, {'data':{'bc':'60','oxy':'20','temp':'35.5'},'date':'2020-12-12 04:23'}],'mac':'6E-0E-95-27-13-3E'}"
 // "{'records':[{'data':{'bc':'','oxy':'','temp':''},'date':''}],'mac':''}"
 // "{'records':[{'data':{'bc':'','oxy':'','temp':''},'date':''}],'bracelet':'', 'broker':''}"
+// "{'bracelet':'6E-0E-95-27-13-3E', 'broker':'0B-88-A4-66-0E-A0', 'records':[{'data':{'bc':'60','oxy':'20','temp':'35.5'},'date':'2020-12-12 04:23'}, {'data':{'bc':'60','oxy':'20','temp':'35.5'},'date':'2020-12-12 04:23'}]}"
 // 
 // "{'bracelet_mac' : '', 'broker_mac' : ''}"
 
@@ -180,10 +181,12 @@ function randomId(source) {
 // convergance data format => "{'broker' : '', 'data' : [{'distance' : '', 'date' : '', 'bracelet_1' : '', 'bracelet_2' : ''}]}"
 
 // "{'broker' : '0B-88-A4-66-0E-A0', 'data' : [{'distance' : 10, 'date' : '2020-10-10 10:10:10', 'bracelet_1' : '66-68-7C-6B-58-8F', 'bracelet_2' : '6E-0E-95-27-13-3E'}, {'distance' : 10, 'date' : '2020-10-10 10:10:14', 'bracelet_1' : '6E-0E-95-27-13-3E', 'bracelet_2' : '66-68-7C-6B-58-8F'}, {'distance' : 10, 'date' : '2020-10-10 10:10:10', 'bracelet_1' : '66-68-7C-6B-58-8F', 'bracelet_2' : '17-DE-36-70-58-A9'}]}"
+// "{'broker' : '0B-88-A4-66-0E-A0', 'data' : [{'distance' : '0.50', 'date' : '2020-12-12 07:07:07', 'bracelet_1' : '66-68-7C-6B-58-8F', 'bracelet_2' : '17-DE-36-70-58-A9'},{'distance' : '1', 'date' : '2020-12-12 07:07:07', 'bracelet_1' : '66-68-7C-6B-58-8F', 'bracelet_2' : '6E-0E-95-27-13-3E'}]}"
 
 // {broker : '', bracelet : '', convergance : [{distance : '', date : '', bracelet_1 : '', bracelet_2 : ''}], record : [data: {bc: '', oxy: '', temp: ''}, date: ''}]}
 // "{'broker' : '0B-88-A4-66-0E-A0', 'bracelet' : '66-68-7C-6B-58-8F', 'convergence' : [{'distance' : '0.50', 'date' : '2020-12-12 07:07:07', 'bracelet_1' : '66-68-7C-6B-58-8F', 'bracelet_2' : '17-DE-36-70-58-A9'},{'distance' : '1', 'date' : '2020-12-12 07:07:07', 'bracelet_1' : '66-68-7C-6B-58-8F', 'bracelet_2' : '6E-0E-95-27-13-3E'}], 'record' : [{'data': {'bc': '10', 'oxy': '10', 'temp': '10'}, 'date': '2020-10-10 10:10:10'},{'data': {'bc': '10', 'oxy': '10', 'temp': '10'}, 'date': '2020-12-12 12:12:12'}]}"
 // 
 "{'bracelet_mac' : '17-DE-36-70-58-A9', 'broker_mac' : 'FF-CC-67-DE-1E-A0', 'parent_mac' : 'C8-5B-47-4A-75-61'}"
+
 
 document.getElementById("depos").innerHTML += nignig.innerHTML;
