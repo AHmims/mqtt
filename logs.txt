@@ -1,0 +1,239 @@
+----------------------
+******* FORMAT *******
+----------------------
+mqtt topic : __
+role : __
+data de test : |v|
+----------------------
+____________________________________________________
+____________________________________________________
+mqtt topic : bracelet/auth/connect/10
+role : authentification / l'entrée a l'usine
+data de test : |v|
+"{'bracelet' : '6E-0E-95-27-13-3E', 'broker' : '0B-88-A4-66-0E-A0'}"
+=>bracelet/auth/response/connect/10 : {"status":"success","bracelet":"17-DE-36-70-58-A9","msg":"","points":970}
+
+"{'bracelet' : 'me-hd-di', 'broker' : '0B-88-A4-66-0E-A0'}"
+=>bracelet/auth/response/connect/10 : {"status":"fail","bracelet":"me-hd-di","data":"br_na_brace"}
+=>admin/notif : {"code":"br_na_brace","user":"me-hd-di","date":"2020-10-28 22:47:04","broker":"0B-88-A4-66-0E-A0"}
+
+"{'broker' : '0B-88-A4-66-0E-A0'}"
+=>bracelet/auth/response/connect/10 : {"status":"fail","data":"e_format_data"}
+=>admin/notif : {"code":"e_format_data","date":"2020-10-28 22:48:44","broker":"0B-88-A4-66-0E-A0"}
+
+"{'bracelet' : '17-DE-36-70-58-A9'}"
+=>bracelet/auth/response/connect/10 : {"status":"fail","bracelet":"17-DE-36-70-58-A9","data":"e_format_data"}
+=>admin/notif : {"code":"e_format_data","user":"17-DE-36-70-58-A9","date":"2020-10-28 22:49:41"}
+----------------------
+mqtt topic : bracelet/auth/disconnect/10
+role : déconnexion / sortie de l'usine
+data de test : |v|
+"{'broker' : '0B-88-A4-66-0E-A0', 'bracelet' : '66-68-7C-6B-58-8F', 'convergence' : [{'distance' : '0.50', 'date' : '2020-12-12 07:07:07', 'bracelet_1' : '66-68-7C-6B-58-8F', 'bracelet_2' : '17-DE-36-70-58-A9'},{'distance' : '1', 'date' : '2020-12-12 07:07:07', 'bracelet_1' : '66-68-7C-6B-58-8F', 'bracelet_2' : '6E-0E-95-27-13-3E'}], 'record' : [{'data': {'bc': '10', 'oxy': '10', 'temp': '10'}, 'date': '2020-10-10 10:10:10'},{'data': {'bc': '10', 'oxy': '10', 'temp': '10'}, 'date': '2020-12-12 12:12:12'}]}"
+=>bracelet/auth/response/disconnect/10 : {"status":"success","bracelet":"66-68-7C-6B-58-8F","data":{"points":935,"msg":"bad_1","rank":"4/4"}}
+
+"{'broker' : '0B-88-A4-66-0E-A0', 'bracelet' : '66-68-7C-6B-58-8F', 'convergence' : [], 'record' : [{'data': {'bc': '10', 'oxy': '10', 'temp': '10'}, 'date': '2020-10-10 10:10:10'},{'data': {'bc': '10', 'oxy': '10', 'temp': '10'}, 'date': '2020-12-12 12:12:12'}]}"
+=>bracelet/auth/response/disconnect/10 : {"status":"success","bracelet":"66-68-7C-6B-58-8F","data":{"points":935,"msg":"bad_1","rank":"4/4"}}
+
+"{'broker' : '0B-88-A4-66-0E-A0', 'bracelet' : '66-68-7C-6B-58-8F', 'convergence' : [], 'record' : []}"
+=>bracelet/auth/response/disconnect/10 : {"status":"success","bracelet":"66-68-7C-6B-58-8F","data":{"points":935,"msg":"bad_2","rank":"4/4"}}
+
+"{'broker' : '0B-88-A4-66-0E-A0', 'bracelet' : '66-68-7C-6B-58-8F'}"
+=>bracelet/auth/response/disconnect/10 : {"status":"success","bracelet":"66-68-7C-6B-58-8F","data":{"points":935,"msg":"bad_1","rank":"4/4"}}
+
+"{'broker' : '0B-88-A4-66-0E-A0', 'bracelet' : 'me-hd-di'}"
+=>bracelet/auth/response/disconnect/10 : {"status":"fail","data":"e_BB_nf"}
+=>admin/notif : {"code":"e_BB_nf","user":"me-hd-di","date":"2020-10-28 22:51:33","broker":"0B-88-A4-66-0E-A0"}
+
+
+"{'broker' : 'me-hd-di', 'bracelet' : '66-68-7C-6B-58-8F'}"
+=>bracelet/auth/response/disconnect/10 : {"status":"fail","data":"e_BB_nf"}
+=>admin/notif : {"code":"e_BB_nf","user":"66-68-7C-6B-58-8F","date":"2020-10-28 22:52:26","broker":"me-hd-di"}
+
+"{'broker' : 'me-hd-di', 'bracelet' : 'me-hd-di-v2'}"
+=>bracelet/auth/response/disconnect/10 : {"status":"fail","data":"e_BB_nf"}
+=>admin/notif : {"code":"e_BB_nf","user":"me-hd-di-v2","date":"2020-10-28 22:53:31","broker":"me-hd-di"}
+
+"{'broker' : 'me-hd-di'}"
+=>bracelet/auth/response/disconnect/10 : {"status":"fail","data":"e_format_data"}
+=>admin/notif : {"code":"e_format_data","date":"2020-10-28 22:54:10","broker":"me-hd-di"}
+
+"{'bracelet' : 'me-hd-di-v2'}"
+=>bracelet/auth/response/disconnect/10 : {"status":"fail","bracelet":"me-hd-di-v2","data":"e_format_data"}
+=>admin/notif : {"code":"e_format_data","user":"me-hd-di-v2","date":"2020-10-28 22:54:59"}
+
+"{'broker' : '0B-88-A4-66-0E-A0', 'convergence' : [], 'record' : []}"
+=>bracelet/auth/response/disconnect/10 : {"status":"fail","data":"e_format_data"}
+=>admin/notif : {"code":"e_format_data","date":"2020-10-28 22:55:47","broker":"0B-88-A4-66-0E-A0"}
+
+"{'bracelet' : '66-68-7C-6B-58-8F', 'convergence' : [], 'record' : []}"
+=>bracelet/auth/response/disconnect/10 : {"status":"fail","bracelet":"66-68-7C-6B-58-8F","data":"e_format_data"}
+=>admin/notif : {"code":"e_format_data","user":"66-68-7C-6B-58-8F","date":"2020-10-28 22:56:35"}
+----------------------
+mqtt topic : bracelet/record/send/10
+role : récupérer les données (temperature, battements de coeur, niveau d'oxygene dans le sang) du bracelet.
+data de test : |v|
+"{'bracelet':'6E-0E-95-27-13-3E', 'broker':'0B-88-A4-66-0E-A0', 'records':[{'data':{'bc':'60','oxy':'20','temp':'35.5'},'date':'2020-12-12 04:23'}, {'data':{'bc':'60','oxy':'20','temp':'35.5'},'date':'2020-12-12 04:23'}]}"
+=>bracelet/record/response/send/10 : {"status":"success","bracelet":"6E-0E-95-27-13-3E"}
+
+"{'bracelet':'6E-0E-95-27-13-3E', 'broker':'0B-88-A4-66-0E-A0', 'records':[{'data':{'bc':'60','oxy':'20','temp':'35.5'},'date':'2020-12-12 04:23'}]}"
+=>bracelet/record/response/send/10 : {"status":"success","bracelet":"6E-0E-95-27-13-3E"}
+
+"{'bracelet':'6E-0E-95-27-13-3E', 'broker':'0B-88-A4-66-0E-A0', 'records':[]}"
+=>bracelet/record/response/send/10 : {"status":"success","bracelet":"6E-0E-95-27-13-3E"}
+
+"{'bracelet':'6E-0E-95-27-13-3E', 'broker':'0B-88-A4-66-0E-A0'}"
+=>bracelet/record/response/send/10 : {"status":"success","bracelet":"6E-0E-95-27-13-3E"}
+
+"{'bracelet':'me-hd-di', 'broker':'0B-88-A4-66-0E-A0'}"
+=>bracelet/record/response/send/10 : {"status":"fail","bracelet":"me-hd-di","data":"br_na_brace"}
+=>admin/notif : {"code":"br_na_brace","user":"me-hd-di","date":"2020-10-28 23:36:17","broker":"0B-88-A4-66-0E-A0"}
+
+"{'bracelet':'6E-0E-95-27-13-3E', 'broker':'me-hd-di'}"
+=>bracelet/record/response/send/10 : {"status":"fail","bracelet":"6E-0E-95-27-13-3E","data":"e_BB_nf"}
+=>admin/notif : {"code":"e_BB_nf","user":"6E-0E-95-27-13-3E","date":"2020-10-28 23:42:06","broker":"me-hd-di"}
+
+"{'bracelet':'me-hd-di', 'broker':'me-hd-di-v2'}"
+=>bracelet/record/response/send/10 : {"status":"fail","bracelet":"me-hd-di","data":"br_na_brace"}
+=>admin/notif : {"code":"br_na_brace","user":"me-hd-di","date":"2020-10-28 23:43:42","broker":"me-hd-di-v2"}
+
+"{'bracelet':'6E-0E-95-27-13-3E'}"
+=>bracelet/record/response/send/10 : {"status":"fail","bracelet":"6E-0E-95-27-13-3E","data":"e_BB_nf"}
+=>admin/notif : {"code":"e_BB_nf","user":"6E-0E-95-27-13-3E","date":"2020-10-28 23:45:43"}
+
+"{'broker':'0B-88-A4-66-0E-A0'}"
+=>bracelet/record/response/send/10 : {"status":"fail","data":"br_na_brace"}
+=>admin/notif : {"code":"br_na_brace","date":"2020-10-28 23:47:04","broker":"0B-88-A4-66-0E-A0"}
+
+"{}"
+=>bracelet/record/response/send/10 : {"status":"fail","data":"br_na_brace"}
+=>admin/notif : {"code":"br_na_brace","date":"2020-10-28 23:48:22"}
+----------------------
+mqtt topic : bracelet/zone/check/10
+role : controleur d'acces aux zones
+data de test : |v|
+
+//zone autoriser
+"{'bracelet' : '6E-0E-95-27-13-3E', 'broker' : '95-43-C8-3B-C0-0A'}"
+=> aucune reponse
+
+//zone non autoriser
+"{'bracelet' : '6E-0E-95-27-13-3E', 'broker' : '0B-88-A4-66-0E-A0'}"
+=>bracelet/zone/response/check/10 : {"status":"fail","bracelet":"6E-0E-95-27-13-3E","data":"z_na"}
+(apres 20sec)
+°start-compteur(chaque 5sec){
+   //si le compteur atteint 10min
+   =>admin/notif : {"code":"br_na_z","user":"6E-0E-95-27-13-3E","date":"2020-10-29 01:42:38","broker":"0B-88-A4-66-0E-A0"}
+   °stop-compteur
+   //si non
+   	//si le bracelet et dans la meme zone non autoriser
+   	=>bracelet/zone/response/check/10 : {"status":"fail","bracelet":"6E-0E-95-27-13-3E","data":"z_na"}
+   	//si non
+   	°stop-compteur
+}
+
+"{'bracelet' : '6E-0E-95-27-13-3E', 'broker' : 'me-hd-di'}"
+=>bracelet/zone/response/check/10 : {"status":"fail","bracelet":"6E-0E-95-27-13-3E","data":"z_na"}
+
+"{'bracelet' : 'me-hd-di', 'broker' : '0B-88-A4-66-0E-A0'}"
+=>bracelet/zone/response/check/10 : {"status":"fail","bracelet":"me-hd-di","data":"z_na"}
+----------------------
+mqtt topic : bracelet/convergence/send/10
+role : la collecte des données de convergence
+data de test : |v|
+
+"{'broker' : '0B-88-A4-66-0E-A0', 'data' : [{'distance' : 10, 'date' : '2020-10-10 10:10:10', 'bracelet_1' : '66-68-7C-6B-58-8F', 'bracelet_2' : '6E-0E-95-27-13-3E'}, {'distance' : 10, 'date' : '2020-10-10 10:10:14', 'bracelet_1' : '6E-0E-95-27-13-3E', 'bracelet_2' : '66-68-7C-6B-58-8F'}, {'distance' : 10, 'date' : '2020-10-10 10:10:10', 'bracelet_1' : '66-68-7C-6B-58-8F', 'bracelet_2' : '17-DE-36-70-58-A9'}]}"
+//aucune reponse : insertion avec succes
+//pour ce cas la distance >= 1.5m alors il n y aura aucun debit des points
+
+"{'broker' : '0B-88-A4-66-0E-A0', 'data' : [{'distance' : '0.50', 'date' : '2020-12-12 07:07:07', 'bracelet_1' : '66-68-7C-6B-58-8F', 'bracelet_2' : '17-DE-36-70-58-A9'},{'distance' : '1', 'date' : '2020-12-12 07:07:07', 'bracelet_1' : '66-68-7C-6B-58-8F', 'bracelet_2' : '6E-0E-95-27-13-3E'}]}"
+//aucune reponse : insertion avec succes
+//dans ce cas, certains points ont été débités pour les 2 bracelets de chaque entrée(chaque data)
+
+"{'broker' : '0B-88-A4-66-0E-A0', 'data' : []}"
+//aucune reponse : 'data' est vide, pas de données a sauvegarder
+
+"{'broker' : '0B-88-A4-66-0E-A0'}"
+//aucune reponse : 'data' est vide, pas de données a sauvegarder
+
+"{'broker' : 'me-hd-di', 'data' : []}"
+//aucun test de validité de mac broker n'a ete implementer
+//aucune reponse : 'data' est vide, pas de données a sauvegarder
+
+"{'broker' : '0B-88-A4-66-0E-A0', 'data' : [{'distance' : '0.50', 'date' : '2020-12-12 07:07:07', 'bracelet_1' : '66-68-7C-6B-58-8F', 'bracelet_2' : '17-DE-36-70-58-A9'}]}"
+"{'broker' : '0B-88-A4-66-0E-A0', 'data' : [{'distance' : '0.50', 'date' : '2020-12-12 07:07:07', 'bracelet_1' : '66-68-7C-6B-58-8F', 'bracelet_2' : '17-DE-36-70-58-A9'}]}"
+//aucune reponse : aucun erreur
+//n'autoriser pas l'insertion d'une donnée qui existe déja dans la base de données
+
+"{'broker' : '0B-88-A4-66-0E-A0', 'data' : [{'distance' : '0.50', 'date' : '2020-12-12 07:07:07', 'bracelet_1' : '66-68-7C-6B-58-8F', 'bracelet_2' : '17-DE-36-70-58-A9'}]}"
+"{'broker' : '0B-88-A4-66-0E-A0', 'data' : [{'distance' : '0.50', 'date' : '2020-12-12 07:07:07', 'bracelet_2' : '66-68-7C-6B-58-8F', 'bracelet_1' : '17-DE-36-70-58-A9'}]}"
+//aucune reponse : aucun erreur
+//n'autoriser pas l'insertion d'une donnée même si on a inverser les adresses des 2 bracelets car il s'agit d'un duplicat
+
+"{'broker' : 'me-hd-di', 'data' : [{'distance' : '0.50', 'date' : '2020-12-12 07:07:07', 'bracelet_1' : '66-68-7C-6B-58-8F', 'bracelet_2' : '17-DE-36-70-58-A9'},{'distance' : '1', 'date' : '2020-12-12 07:07:07', 'bracelet_1' : '66-68-7C-6B-58-8F', 'bracelet_2' : '6E-0E-95-27-13-3E'}]}"
+=>admin/notif : {"code":"db_e_s_convergence","user":"66-68-7C-6B-58-8F","date":"2020-10-29 02:37:58","broker":"me-hd-di"}
+
+"{'broker' : '0B-88-A4-66-0E-A0', 'data' : [{'distance' : '0.50', 'date' : '2020-12-12 07:07:07', 'bracelet_1' : 'me-hd-di', 'bracelet_2' : '17-DE-36-70-58-A9'}]}"
+=>admin/notif : {"code":"db_e_s_convergence","user":"me-hd-di","date":"2020-10-29 03:12:25","broker":"0B-88-A4-66-0E-A0"}
+
+"{'broker' : '0B-88-A4-66-0E-A0', 'data' : [{'distance' : '0.50', 'date' : '2020-12-12 07:07:07', 'bracelet_1' : '66-68-7C-6B-58-8F', 'bracelet_2' : 'me-hd-di'}]}"
+{"code":"db_e_s_convergence","user":"66-68-7C-6B-58-8F","date":"2020-10-29 03:13:38","broker":"0B-88-A4-66-0E-A0"}
+----------------------
+mqtt topic : bracelet/queue/send/10
+role : prendre un ticket
+data de test : |v|
+//s'il y avait une place dans la salle
+//s'il n'avait pas un ticket < (interval de 5min)
+"{'bracelet_mac' : '17-DE-36-70-58-A9', 'broker_mac' : 'C8-5B-47-4A-75-61'}"
+=>bracelet/queue/response/send/10 : {"status":0,"bracelet":"17-DE-36-70-58-A9","passe":true}
+
+//s'il y avait une place dans la salle
+//s'il avait un ticket < (interval de 5min)
+"{'bracelet_mac' : '17-DE-36-70-58-A9', 'broker_mac' : 'C8-5B-47-4A-75-61'}"
+=>bracelet/queue/response/send/10 : {"status":0,"bracelet":"17-DE-36-70-58-A9","passe":null}
+
+//s'il y avait une place dans la salle
+//s'il avait un ticket >= (interval de 5min)
+"{'bracelet_mac' : '17-DE-36-70-58-A9', 'broker_mac' : 'C8-5B-47-4A-75-61'}"
+=>bracelet/queue/response/send/10 : {"status":0,"bracelet":"17-DE-36-70-58-A9","passe":true}
+°supprimer l'ancien ticket
+
+//s'il n'y avait pas de place dans la salle
+//s'il n'avait pas un ticket < (interval de 5min)
+"{'bracelet_mac' : '17-DE-36-70-58-A9', 'broker_mac' : 'C8-5B-47-4A-75-61'}"
+=>bracelet/queue/response/send/10 : {"status":0,"bracelet":"17-DE-36-70-58-A9","passe":false,"ticket":3}
+
+//s'il n'y avait pas de place dans la salle
+//s'il avait un ticket < (interval de 5min)
+"{'bracelet_mac' : '17-DE-36-70-58-A9', 'broker_mac' : 'C8-5B-47-4A-75-61'}"
+=>bracelet/queue/response/send/10 : {"status":0,"bracelet":"17-DE-36-70-58-A9","passe":null}
+
+//s'il n'y avait pas de place dans la salle
+//s'il avait un ticket >= (interval de 5min)
+"{'bracelet_mac' : '17-DE-36-70-58-A9', 'broker_mac' : 'C8-5B-47-4A-75-61'}"
+=>bracelet/queue/response/send/10 : {"status":0,"bracelet":"17-DE-36-70-58-A9","passe":false,"ticket":3}
+°supprimer l'ancien ticket
+
+//si le nombre de personnes dans la salle > le nombre maximum autorisé
+//s'il n'avait pas un ticket < (interval de 5min)
+"{'bracelet_mac' : '17-DE-36-70-58-A9', 'broker_mac' : 'C8-5B-47-4A-75-61'}"
+=>bracelet/queue/response/send/10 : {"status":0,"bracelet":"17-DE-36-70-58-A9","passe":false,"ticket":4}
+=>admin/notif : {"code":"br_max_queueRoom","user":"17-DE-36-70-58-A9","date":"2020-10-29 17:05:07","broker":"C8-5B-47-4A-75-61"}
+
+"{'bracelet_mac' : 'me-hd-di', 'broker_mac' : 'C8-5B-47-4A-75-61'}"
+=>bracelet/queue/response/send/10 : {"status":0,"bracelet":"me-hd-di","passe":null,"error":"Ticket n'a pas été créé, veuillez contacter l'administrateur"}
+=>admin/notif : {"code":"db_e_s_queue","user":"me-hd-di","date":"2020-10-29 17:50:05","broker":"C8-5B-47-4A-75-61"}
+
+"{'bracelet_mac' : '17-DE-36-70-58-A9', 'broker_mac' : 'me-hd-di'}"
+=>bracelet/queue/response/send/10 : {"status":0,"bracelet":"17-DE-36-70-58-A9","passe":null,"error":"Ticket n'a pas été créé, veuillez contacter l'administrateur"}
+=>admin/notif : {"code":"db_e_s_queue","user":"17-DE-36-70-58-A9","date":"2020-10-29 17:51:08","broker":"me-hd-di"}
+
+"{'bracelet_mac' : 'me-hd-di', 'broker_mac' : 'me-hd-di-v2'}"
+=>bracelet/queue/response/send/10 : {"status":0,"bracelet":"me-hd-di","passe":null,"error":"Ticket n'a pas été créé, veuillez contacter l'administrateur"}
+=>admin/notif : {"code":"db_e_s_queue","user":"me-hd-di","date":"2020-10-29 17:52:16","broker":"me-hd-di-v2"}
+----------------------
+mqtt topic : bracelet/queue_room/send/10
+role : tentative d'entrer dans la salle
+data de test : |v|
+
+**pour demain. le test sera en temps réel avec vous
+----------------------
