@@ -234,6 +234,30 @@ data de test : |v|
 mqtt topic : bracelet/queue_room/send/10
 role : tentative d'entrer dans la salle
 data de test : |v|
+//le personnel a déja un ticket
+"{'bracelet_mac' : '17-DE-36-70-58-A9', 'broker_mac' : 'FF-CC-67-DE-1E-A0', 'parent_mac' : 'C8-5B-47-4A-75-61'}"
+°Le système a enregistré la première détection sur la BD
 
-**pour demain. le test sera en temps réel avec vous
+//le personnel a déja un ticket
+//le personnel a été déja detecter par le premier broker de detection de la salle
+"{'bracelet_mac' : '17-DE-36-70-58-A9', 'broker_mac' : 'A9-D3-D9-DB-BA-47', 'parent_mac' : 'C8-5B-47-4A-75-61'}"
+°Le système a enregistré la deuxième détection sur la BD
+
+//si le bracelet n'a pas été détecté sur l'autre broker pendant les 5 dernières secondes, le système identifie que le perssone a quitté la salle
+//le personnel a déja un ticket
+=>bracelet/queue_room/status/send/10 : {"status":1,"spots":1}
+
+//si le bracelet est resté dans la salle pendant 30 secondes
+=>bracelet/queue_room/l_main/10 : {"status":"init","bracelet":"17-DE-36-70-58-A9","data":"Pour chaque 5 secondes vous êtes dans la salle de bain, 5 points seront débités"}
+	//pour chaque 5sec apres
+	°le système débite 5 points
+	//si le bracelet a quitté
+	=>bracelet/queue_room/l_main/10 : {"status":"end","bracelet":"17-DE-36-70-58-A9","data":70}
+
+//le personnel n'a pas un ticket
+"{'bracelet_mac' : '17-DE-36-70-58-A9', 'broker_mac' : 'A9-D3-D9-DB-BA-47', 'parent_mac' : 'C8-5B-47-4A-75-61'}"
+=>bracelet/queue_room/response/send/10 : {"status":0,"bracelet":"17-DE-36-70-58-A9","passe":false,"ticket":"none"}
+"{'bracelet_mac' : '17-DE-36-70-58-A9', 'broker_mac' : 'FF-CC-67-DE-1E-A0', 'parent_mac' : 'C8-5B-47-4A-75-61'}"
+=>bracelet/queue_room/response/send/10 : {"status":"na","bracelet":"17-DE-36-70-58-A9"}
 ----------------------
+Good!

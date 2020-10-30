@@ -187,6 +187,10 @@ function randomId(source) {
 // "{'broker' : '0B-88-A4-66-0E-A0', 'bracelet' : '66-68-7C-6B-58-8F', 'convergence' : [{'distance' : '0.50', 'date' : '2020-12-12 07:07:07', 'bracelet_1' : '66-68-7C-6B-58-8F', 'bracelet_2' : '17-DE-36-70-58-A9'},{'distance' : '1', 'date' : '2020-12-12 07:07:07', 'bracelet_1' : '66-68-7C-6B-58-8F', 'bracelet_2' : '6E-0E-95-27-13-3E'}], 'record' : [{'data': {'bc': '10', 'oxy': '10', 'temp': '10'}, 'date': '2020-10-10 10:10:10'},{'data': {'bc': '10', 'oxy': '10', 'temp': '10'}, 'date': '2020-12-12 12:12:12'}]}"
 // 
 "{'bracelet_mac' : '17-DE-36-70-58-A9', 'broker_mac' : 'FF-CC-67-DE-1E-A0', 'parent_mac' : 'C8-5B-47-4A-75-61'}"
+"{'bracelet_mac' : '17-DE-36-70-58-A9', 'broker_mac' : 'A9-D3-D9-DB-BA-47', 'parent_mac' : 'C8-5B-47-4A-75-61'}"
+
+-h localhost -t bracelet/queue_room/send/10 -m "{'bracelet_mac' : '17-DE-36-70-58-A9', 'broker_mac' : 'FF-CC-67-DE-1E-A0', 'parent_mac' : 'C8-5B-47-4A-75-61'}"
+-h localhost -t bracelet/queue_room/send/10 -m "{'bracelet_mac' : '17-DE-36-70-58-A9', 'broker_mac' : 'A9-D3-D9-DB-BA-47', 'parent_mac' : 'C8-5B-47-4A-75-61'}"
 
 
 document.getElementById("depos").innerHTML += nignig.innerHTML;

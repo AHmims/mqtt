@@ -9,24 +9,19 @@
 <body>
     <ul id="container"></ul>
     <script>
-        const config = [{
-            host : "127.0.0.1",
-            topic : "hmm/test2"
-        },{
-            host : "35.193.24.19",
-            topic : "#"
-        }]
-        var client = mqtt.connect(`ws://${config[1].host}:9001`) // you add a ws:// url here
-        client.subscribe(config[1].topic)
+        var client = mqtt.connect(`ws://test.mosquitto.org:8081`) // you add a ws:// url here
+        client.subscribe('#')
 
         client.on("message", function (topic, payload) {
             const data = [topic, payload].join(": ");
-            console.log(JSON.parse(payload.toString()));
-            // 
-            var row = document.createElement('li');
-            row.appendChild(document.createTextNode(data));
-            // 
-            document.getElementById('container').appendChild(row);
+            console.log(data)
+            document.body.innerHTML = data;
+            // console.log(JSON.parse(payload.toString()));
+            // // 
+            // var row = document.createElement('li');
+            // row.appendChild(document.createTextNode(data));
+            // // 
+            // document.getElementById('container').appendChild(row);
             // client.end()
         })
     </script>
